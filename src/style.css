@@ -96,3 +96,57 @@
 .member-name {
     padding: 30px 30px;
 }
+
+/* ========= 出版物 =========== */
+.publishment {
+    position: relative;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    background-image: url("../src/assets/publishment.JPG");
+}
+
+.publishment:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /*半透明のフィルターをかける*/
+}
+
+.publishment-title {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 32pt;
+    color: white;
+    text-align: center;
+}
+
+.publishment-cell {
+    max-height: 30%;
+    padding: 50px 70px 50px 70px;
+    text-align:center;
+}
+
+.publishment-cell h3 {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 32pt;
+    color: white;
+}
+
+.publishment-cell h4 {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 18pt;
+    color: white;
+}
+
+.publishment-cell img {
+    max-width: 150px;
+    max-height: 300px;
+}
+
+.publishment-icon {
+    padding: 30px 30px;
+}

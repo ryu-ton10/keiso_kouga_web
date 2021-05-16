@@ -1,9 +1,4 @@
-p {
-    font-family: 'Hiragino Mincho Pro';
-    font-size: 64pt;
-    color: white;
-}
-
+/* ========= 背景 =========== */
 .main {
     position: absolute;
     width: 100%;
@@ -14,9 +9,58 @@ p {
     background-image: url("../src/assets/title.JPG");
 }
 
+.main:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /*半透明のフィルターをかける*/
+}
+
+/* ========= ヘッダータイトル =========== */
 .title-text {
-    padding-left: 50px;
     position: relative;
     vertical-align: middle;
-    margin-top: 20px;
+    margin: 30px 60px;
+    max-height: 30%;
+    min-height: 200px;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 64pt;
+    color: white;
+}
+
+/* ========= メンバー紹介 =========== */
+.member-title {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 32pt;
+    color: white;
+    text-align: center;
+}
+
+.member-cell {
+    max-height: 30%;
+    padding: 5px 40px 50px 40px;
+}
+
+.member-cell p {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 32pt;
+    color: white;
+    text-align:center;
+}
+
+.member-cell img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+}
+
+.member-icon {
+    padding: 30px 30px;
+}
+
+.member-name {
+    padding: 30px 30px;
 }

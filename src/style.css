@@ -13,6 +13,10 @@
     background-position: center 50%;
     background-size: cover;
     background-image: url("../src/assets/title.JPG");
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .title:before {

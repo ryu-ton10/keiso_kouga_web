@@ -32,6 +32,21 @@
 .title-text {
     padding: 50px 0px 50px 0px;
     text-align: center;
+    animation-name: fade-in;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .title-text h2 {
@@ -43,7 +58,7 @@
 
 .title-text h3 {
     font-family: 'Hiragino Mincho Pro';
-    font-size: 32pt;
+    font-size: 18pt;
     color: white;
     margin: 50px 50px;
 }

@@ -7,7 +7,10 @@ const Members: React.FC = () => {
     return (
         <div className="member">
             <div className="member-title">
-                <p>メンバー</p>
+                <div className="member-title-rgba">
+                    <div className="member-title-jp">紡ギ人</div>
+                    <div className="member-title-en">Members</div>
+                </div>
             </div>
             <div className="member-cell">
                 <Row gutter={12}>

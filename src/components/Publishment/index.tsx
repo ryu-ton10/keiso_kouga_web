@@ -7,7 +7,10 @@ const Publishment: React.FC = () => {
     return (
         <div className="publishment">
             <div className="publishment-title">
-                <p>出版物</p>
+                <div className="publishment-title-rgba">
+                    <div className="publishment-title-jp">出版物</div>
+                    <div className="publishment-title-en">Publishment</div>
+                </div>
             </div>
             <div className="publishment-cell">
                 <Row gutter={24}>
@@ -15,8 +18,8 @@ const Publishment: React.FC = () => {
                         <img src={String(icon)} alt="icon" />
                     </Col>
                     <Col lg={16} xs={24} className="publishment-descriptions">
-                        <h3>紬 -つむぎ-</h3>
-                        <h4>日本各地の風景を、１つの紡ぎ唄のように連ね想いを馳せることが出来る１冊。</h4>
+                        <div className="book-title">紬 -つむぎ-</div>
+                        <div className="book-description">日本各地の風景を集めた一冊。<br/>それらはまさに、日本の旅を紡いだ。</div>
                     </Col>
                 </Row>
             </div>

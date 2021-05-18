@@ -1,6 +1,5 @@
 /* ========= 背景 =========== */
 .main {
-    position: absolute;
     width: 100%;
     max-height: 100%;
 }
@@ -69,6 +68,7 @@
 }
 
 .member-title {
+    height: 200px;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -76,22 +76,25 @@
     background-image: url("../src/assets/member.JPG");
 }
 
-.member-title p {
+.member-title-rgba {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.member-title-jp {
     text-align: left;
     font-family: 'Hiragino Mincho Pro';
     font-size: 48pt;
     color: white;
-    padding: 20px 0px 20px 40px;
+    padding: 20px 0px 0px 40px;
 }
 
-.member-title:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /*半透明のフィルターをかける*/
+.member-title-en {
+    text-align: left;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 14pt;
+    color: white;
+    padding: 0px 0px 0px 40px;
 }
 
 .member-cell {
@@ -127,6 +130,7 @@
 }
 
 .publishment-title {
+    height: 200px;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -134,22 +138,25 @@
     background-image: url("../src/assets/publishment.JPG");
 }
 
-.publishment-title p {
+.publishment-title-rgba {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.publishment-title-jp {
     text-align: left;
     font-family: 'Hiragino Mincho Pro';
     font-size: 48pt;
     color: white;
-    padding: 20px 0px 20px 40px;
+    padding: 20px 0px 0px 40px;
 }
 
-.publishment-title:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /*半透明のフィルターをかける*/
+.publishment-title-en {
+    text-align: left;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 16pt;
+    color: white;
+    padding: 0px 0px 0px 40px;
 }
 
 .publishment-cell {
@@ -158,16 +165,17 @@
     text-align:center;
 }
 
-.publishment-cell h3 {
+.book-title {
     font-family: 'Hiragino Mincho Pro';
     font-size: 32pt;
-    color: white;
+    color: gray;
+    padding: 20px 0px 40px 0px;
 }
 
-.publishment-cell h4 {
+.book-description {
     font-family: 'Hiragino Mincho Pro';
     font-size: 18pt;
-    color: white;
+    color: gray;
 }
 
 .publishment-cell img {

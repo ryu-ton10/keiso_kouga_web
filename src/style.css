@@ -99,15 +99,16 @@
 
 .member-cell {
     max-height: 30%;
-    padding: 0px 40px 50px 40px;
+    padding: 40px 40px 50px 40px;
     text-align:center;
-    background-color: rgba(255, 255, 255, 1); /*半透明のフィルターをかける*/
+    background-color: rgba(245, 245, 245, 1);
 }
 
 .member-cell p {
     font-family: 'Hiragino Mincho Pro';
     font-size: 32pt;
-    color: white;
+    color: rgba(105, 105, 105, 1);
+    padding: 20px 0px 0px 0px;
 }
 
 .member-cell img {
@@ -163,6 +164,7 @@
     max-height: 30%;
     padding: 50px 70px 50px 70px;
     text-align:center;
+    background-color: rgba(245, 245, 245, 1);
 }
 
 .book-title {

@@ -13,28 +13,28 @@
     background-size: cover;
     background-image: url("../src/assets/title.JPG");
     height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.title:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5); /*半透明のフィルターをかける*/
+.title-rgba {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .title-text {
+    height: 100%;
     padding: 50px 0px 50px 0px;
     text-align: center;
     animation-name: fade-in;
     animation-duration: 1.0s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes fade-in {
@@ -48,18 +48,18 @@
     }
 }
 
-.title-text h2 {
+.title-main {
     font-family: 'Hiragino Mincho Pro';
     font-size: 64pt;
     color: white;
-    margin: 50px 50px;
+    padding: 0px 0px 20px 0px;
 }
 
-.title-text h3 {
+.title-sub {
     font-family: 'Hiragino Mincho Pro';
     font-size: 18pt;
     color: white;
-    margin: 50px 50px;
+    padding: 20px 0px 0px 0px;
 }
 
 /* ========= メンバー紹介 =========== */

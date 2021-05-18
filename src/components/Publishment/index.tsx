@@ -7,7 +7,7 @@ const Publishment: React.FC = () => {
     return (
         <div className="publishment">
             <div className="publishment-title">
-                出版物
+                <p>出版物</p>
             </div>
             <div className="publishment-cell">
                 <Row gutter={24}>

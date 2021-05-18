@@ -66,6 +66,9 @@
 /* ========= メンバー紹介 =========== */
 .member {
     position: relative;
+}
+
+.member-title {
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -73,7 +76,15 @@
     background-image: url("../src/assets/member.JPG");
 }
 
-.member:before {
+.member-title p {
+    text-align: left;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 48pt;
+    color: white;
+    padding: 20px 0px 20px 40px;
+}
+
+.member-title:before {
     content: '';
     position: absolute;
     top: 0;
@@ -83,17 +94,11 @@
     background-color: rgba(0,0,0,0.5); /*半透明のフィルターをかける*/
 }
 
-.member-title {
-    font-family: 'Hiragino Mincho Pro';
-    font-size: 32pt;
-    color: white;
-    text-align: center;
-}
-
 .member-cell {
     max-height: 30%;
-    padding: 5px 40px 50px 40px;
+    padding: 0px 40px 50px 40px;
     text-align:center;
+    background-color: rgba(255, 255, 255, 1); /*半透明のフィルターをかける*/
 }
 
 .member-cell p {
@@ -119,6 +124,9 @@
 /* ========= 出版物 =========== */
 .publishment {
     position: relative;
+}
+
+.publishment-title {
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -126,7 +134,15 @@
     background-image: url("../src/assets/publishment.JPG");
 }
 
-.publishment:before {
+.publishment-title p {
+    text-align: left;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 48pt;
+    color: white;
+    padding: 20px 0px 20px 40px;
+}
+
+.publishment-title:before {
     content: '';
     position: absolute;
     top: 0;
@@ -134,13 +150,6 @@
     left: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5); /*半透明のフィルターをかける*/
-}
-
-.publishment-title {
-    font-family: 'Hiragino Mincho Pro';
-    font-size: 32pt;
-    color: white;
-    text-align: center;
 }
 
 .publishment-cell {

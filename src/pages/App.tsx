@@ -5,7 +5,7 @@ import Members from '../components/Members';
 import Publishment from '../components/Publishment';
 import './App.css';
 import 'antd/dist/antd.css';
-import { members } from './../data/data';
+import { members, publishments } from './../data/data';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Title />
         <Description />
         <Members members={members}/>
-        <Publishment />
+        <Publishment publishments={publishments}/>
       </div>
   );
 }

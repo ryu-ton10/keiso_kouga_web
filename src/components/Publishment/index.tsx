@@ -1,9 +1,22 @@
 import React from 'react';
 import './index.css';
-import icon from '../../assets/tsumugi.jpeg';
 import { Row, Col } from 'antd';
 
-const Publishment: React.FC = () => {
+type Publishment = {
+    id: string;
+    title: string;
+    description: string;
+    image: string;
+}
+
+type Props = {
+    publishments: Publishment[];
+}
+
+const Publishment: React.FC<Props> = (props) => {
+
+    const { publishments } = props;
+
     return (
         <div className="publishment">
             <div className="publishment-title">
@@ -16,13 +29,20 @@ const Publishment: React.FC = () => {
             </div>
             <div className="publishment-cell">
                 <Row gutter={24}>
-                    <Col lg={8} xs={24} className="publishment-icon">
-                        <img src={String(icon)} alt="icon" />
-                    </Col>
-                    <Col lg={16} xs={24} className="publishment-descriptions">
-                        <div className="book-title">紬 -つむぎ-</div>
-                        <div className="book-description">日本各地の風景を集めた一冊。<br/>それらはまさに、日本の旅を紡いだ。</div>
-                    </Col>
+                    {publishments.map((publishment) => {
+                        const { title, description, image } = publishment;
+                        return (
+                        <>
+                            <Col lg={8} xs={24} className="publishment-icon">
+                                <img src={process.env.PUBLIC_URL + image} alt="icon" />
+                            </Col>
+                            <Col lg={16} xs={24} className="publishment-descriptions">
+                                <div className="book-title">{title}</div>
+                                <div className="book-description">{description}</div>
+                            </Col>
+                        </>
+                        );
+                    })}
                 </Row>
             </div>
         </div>

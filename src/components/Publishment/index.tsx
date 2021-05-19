@@ -8,8 +8,10 @@ const Publishment: React.FC = () => {
         <div className="publishment">
             <div className="publishment-title">
                 <div className="publishment-title-rgba">
-                    <div className="publishment-title-jp">出版物</div>
-                    <div className="publishment-title-en">Publishment</div>
+                    <div className="publishment-title-text">
+                        <div className="publishment-title-jp">出版物</div>
+                        <div className="publishment-title-en">Publishment</div>
+                    </div>
                 </div>
             </div>
             <div className="publishment-cell">

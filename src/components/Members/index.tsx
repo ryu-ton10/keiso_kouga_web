@@ -8,8 +8,10 @@ const Members: React.FC = () => {
         <div className="member">
             <div className="member-title">
                 <div className="member-title-rgba">
-                    <div className="member-title-jp">紡ギ人</div>
-                    <div className="member-title-en">Members</div>
+                    <div className="member-title-text">
+                        <div className="member-title-jp">紡ギ人</div>
+                        <div className="member-title-en">Members</div>
+                    </div>
                 </div>
             </div>
             <div className="member-cell">

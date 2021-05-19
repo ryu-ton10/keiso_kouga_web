@@ -5,13 +5,14 @@ import Members from '../components/Members';
 import Publishment from '../components/Publishment';
 import './App.css';
 import 'antd/dist/antd.css';
+import { members } from './../data/data';
 
 function App() {
   return (
       <div className="main">
         <Title />
         <Description />
-        <Members />
+        <Members members={members}/>
         <Publishment />
       </div>
   );

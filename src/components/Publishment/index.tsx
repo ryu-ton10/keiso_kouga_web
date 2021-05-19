@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../style.css';
+import './index.css';
 import icon from '../../assets/tsumugi.jpeg';
 import { Row, Col } from 'antd';
 

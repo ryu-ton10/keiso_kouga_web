@@ -1,0 +1,56 @@
+/* ========= ヘッダータイトル =========== */
+.title {
+    position: relative;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    background-image: url("../../assets/title.JPG");
+    height: 100vh;
+}
+
+.title-rgba {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title-text {
+    height: 100%;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    animation-name: fade-in;
+    animation-duration: 1.0s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title-main {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 64pt;
+    color: white;
+    padding: 0 0 20px 0px;
+}
+
+.title-sub {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 18pt;
+    color: white;
+    padding: 20px 0 0 0;
+}
+

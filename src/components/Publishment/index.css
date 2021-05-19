@@ -1,0 +1,71 @@
+/* ========= 出版物 =========== */
+.publishment {
+    position: relative;
+}
+
+.publishment-title {
+    height: 180px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    background-image: url("../../assets/publishment.JPG");
+}
+
+.publishment-title-rgba {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.publishment-title-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.publishment-title-jp {
+    text-align: left;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 48pt;
+    color: white;
+    padding: 0 0 0 40px;
+}
+
+.publishment-title-en {
+    text-align: left;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 16pt;
+    color: white;
+    padding: 0 0 0 40px;
+}
+
+.publishment-cell {
+    max-height: 30%;
+    padding: 50px 70px 50px 70px;
+    text-align:center;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.book-title {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 32pt;
+    color: gray;
+    padding: 20px 0 40px 0;
+}
+
+.book-description {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 18pt;
+    color: gray;
+}
+
+.publishment-cell img {
+    max-width: 150px;
+    max-height: 300px;
+}
+
+.publishment-icon {
+    padding: 30px 30px;
+}

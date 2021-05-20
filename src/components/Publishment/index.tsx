@@ -1,12 +1,14 @@
 import React from 'react';
 import './index.css';
-import { Row, Col } from 'antd';
+import { Row, Col, Button } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
 
 type Publishment = {
     id: string;
     title: string;
     description: string;
     image: string;
+    url: string;
 }
 
 type Props = {
@@ -30,7 +32,7 @@ const Publishment: React.FC<Props> = (props) => {
             <div className="publishment-cell">
                 <Row gutter={24}>
                     {publishments.map((publishment) => {
-                        const { title, description, image } = publishment;
+                        const { title, description, image, url } = publishment;
                         return (
                         <>
                             <Col lg={10} xs={24} className="publishment-icon">
@@ -39,6 +41,11 @@ const Publishment: React.FC<Props> = (props) => {
                             <Col lg={14} xs={24} className="publishment-descriptions">
                                 <h2>{title}</h2>
                                 <h3>{description}</h3>
+                                <a href={url} rel="noopener noreferrer" target="_blank">
+                                    <Button type="primary" icon={<SearchOutlined />}>
+                                      Search on Amazon
+                                    </Button>
+                                </a>
                             </Col>
                         </>
                         );

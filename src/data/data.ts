@@ -8,7 +8,7 @@ export const members = [
     },
     {
         id: nanoid(),
-        name: "つきー",
+        name: "つきうさぎ",
         image: "tuki_icon.jpeg",
     },
 ]

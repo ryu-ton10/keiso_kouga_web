@@ -33,12 +33,12 @@ const Publishment: React.FC<Props> = (props) => {
                         const { title, description, image } = publishment;
                         return (
                         <>
-                            <Col lg={8} xs={24} className="publishment-icon">
+                            <Col lg={10} xs={24} className="publishment-icon">
                                 <img src={process.env.PUBLIC_URL + image} alt="icon" />
                             </Col>
-                            <Col lg={16} xs={24} className="publishment-descriptions">
-                                <div className="book-title">{title}</div>
-                                <div className="book-description">{description}</div>
+                            <Col lg={14} xs={24} className="publishment-descriptions">
+                                <h2>{title}</h2>
+                                <h3>{description}</h3>
                             </Col>
                         </>
                         );

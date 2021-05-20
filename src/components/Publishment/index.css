@@ -42,30 +42,35 @@
 }
 
 .publishment-cell {
-    max-height: 30%;
-    padding: 50px 70px 50px 70px;
-    text-align:center;
+    padding: 100px 70px 100px 70px;
     background-color: rgba(245, 245, 245, 1);
 }
 
-.book-title {
+.publishment-icon {
+    text-align: center;
+}
+
+.publishment-descriptions {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.publishment-descriptions h2 {
     font-family: 'Hiragino Mincho Pro';
     font-size: 32pt;
     color: gray;
-    padding: 20px 0 40px 0;
+    padding: 20px 0 20px 0;
 }
 
-.book-description {
+.publishment-descriptions h3 {
     font-family: 'Hiragino Mincho Pro';
-    font-size: 18pt;
+    font-size: 14pt;
     color: gray;
 }
 
-.publishment-cell img {
-    max-width: 150px;
+.publishment-icon img {
     max-height: 300px;
-}
-
-.publishment-icon {
-    padding: 30px 30px;
 }

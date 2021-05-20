@@ -51,7 +51,7 @@
 }
 
 .publishment-descriptions {
-    text-align: center;
+    text-align: left;
     position: relative;
     display: flex;
     flex-direction: column;

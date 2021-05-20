@@ -17,7 +17,7 @@ export const publishments = [
     {
         id: nanoid(),
         title: "紬 -つむぎ-",
-        description: "日本各地の風景を集めた一冊。それらはまさに、日本の旅を紡いだ。",
+        description: "珪素光画の第1作目として刊行された作品。日本各地の風景を撮影したものを集め、まるで1つの旅をしているかのように紡いだ１冊です。",
         image: "tsumugi.webp",
     },
 ]

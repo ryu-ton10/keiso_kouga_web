@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { Row, Col, Image } from 'antd';
 
-type Publishment = {
+type Book = {
     id: string;
     title: string;
     description: string;
@@ -11,12 +11,12 @@ type Publishment = {
 }
 
 type Props = {
-    publishments: Publishment[];
+    books: Book[];
 }
 
 const Publishment: React.FC<Props> = (props) => {
 
-    const { publishments } = props;
+    const { books } = props;
 
     return (
         <div className="publishment">
@@ -30,8 +30,8 @@ const Publishment: React.FC<Props> = (props) => {
             </div>
             <div className="publishment-cell">
                 <Row gutter={24}>
-                    {publishments.map((publishment) => {
-                        const { title, description, image, url } = publishment;
+                    {books.map((book) => {
+                        const { title, description, image, url } = book;
                         return (
                         <>
                             <Col lg={10} xs={24} className="publishment-icon">

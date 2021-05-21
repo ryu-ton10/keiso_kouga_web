@@ -13,7 +13,7 @@ export const members = [
     },
 ]
 
-export const publishments = [
+export const books = [
     {
         id: nanoid(),
         title: "紬 -つむぎ-",

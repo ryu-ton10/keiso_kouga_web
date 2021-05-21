@@ -5,7 +5,7 @@ import Members from '../components/Members';
 import Publishment from '../components/Publishment';
 import './App.css';
 import 'antd/dist/antd.css';
-import { members, publishments } from './../data/data';
+import { members, books } from './../data/data';
 import { Layout } from 'antd';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Title />
         <Description />
         <Members members={members}/>
-        <Publishment publishments={publishments}/>
+        <Publishment books={books}/>
         <Layout>
           <Footer style={{ textAlign: 'center' }}>©︎ 2021 Ryusei Nomi</Footer>
         </Layout>

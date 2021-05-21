@@ -8,6 +8,7 @@ const Title: React.FC = () => {
                 <div className="title-text">
                     <div className="title-main">珪素光画</div>
                     <div className="title-sub">日常を、思い出を、紡ぐ。</div>
+                    <p className="scroll"><span></span></p>
                 </div>
             </div>
         </div>

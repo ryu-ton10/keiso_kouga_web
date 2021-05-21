@@ -19,7 +19,7 @@ function App() {
         <Members members={members}/>
         <Publishment publishments={publishments}/>
         <Layout>
-          <Footer style={{ textAlign: 'center' }}>©︎ 2021 珪素光画</Footer>
+          <Footer style={{ textAlign: 'center' }}>©︎ 2021 Ryusei Nomi</Footer>
         </Layout>
       </div>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Row, Col } from 'antd';
+import { Row, Col, Image } from 'antd';
 
 type Publishment = {
     id: string;
@@ -35,7 +35,7 @@ const Publishment: React.FC<Props> = (props) => {
                         return (
                         <>
                             <Col lg={10} xs={24} className="publishment-icon">
-                                <img src={process.env.PUBLIC_URL + image} alt="icon" />
+                                <Image src={process.env.PUBLIC_URL + image} alt="icon" />
                             </Col>
                             <Col lg={14} xs={24} className="publishment-descriptions">
                                 <h2>{title}</h2>

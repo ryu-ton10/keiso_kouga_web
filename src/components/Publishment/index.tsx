@@ -41,7 +41,7 @@ const Publishment: React.FC<Props> = (props) => {
                                 <h2>{title}</h2>
                                 <h3>{description}</h3>
                                 <a href={url} rel="noopener noreferrer" target="_blank">
-                                    <img src={process.env.PUBLIC_URL + "assocbutt_or_detail.png"} />
+                                    <img src={process.env.PUBLIC_URL + "assocbutt_or_detail.png"} alt="amazon icon"/>
                                 </a>
                             </Col>
                         </>

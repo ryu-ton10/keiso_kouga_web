@@ -1,7 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Row, Col, Button } from 'antd';
-import { SearchOutlined } from '@ant-design/icons';
+import { Row, Col } from 'antd';
 
 type Publishment = {
     id: string;
@@ -42,9 +41,7 @@ const Publishment: React.FC<Props> = (props) => {
                                 <h2>{title}</h2>
                                 <h3>{description}</h3>
                                 <a href={url} rel="noopener noreferrer" target="_blank">
-                                    <Button type="primary" icon={<SearchOutlined />}>
-                                      Search on Amazon
-                                    </Button>
+                                    <img src={process.env.PUBLIC_URL + "assocbutt_or_detail.png"} />
                                 </a>
                             </Col>
                         </>

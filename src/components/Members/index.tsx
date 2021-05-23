@@ -1,11 +1,14 @@
 import React from 'react';
 import './index.css';
 import { Row, Col, Image } from 'antd';
+import { TwitterCircleFilled } from '@ant-design/icons';
 
 type Member = {
     id: string;
     name: string;
     image: string;
+    works: string[];
+    twitter_url: string;
 }
 
 type Props = {
@@ -28,14 +31,17 @@ const Members: React.FC<Props> = (props) => {
             </div>
             <div className="member-cell">
                 {members.map((member) => {
-                    const { name, image, works } = member;
+                    const { name, image, works, twitter_url } = member;
                     return (
                         <Row>
                             <Col lg={12} xs={24} className="member-icon">
                                 <img src={process.env.PUBLIC_URL + image} alt="icon" />
                             </Col>
                             <Col lg={12} xs={24} className="member-profile">
-                                <p>{name}</p>
+                                <Row>
+                                    <p>{name}</p>
+                                    <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterCircleFilled /></a>
+                                </Row>
                                 <Row>
                                     {works.map((work) => {
                                         return (

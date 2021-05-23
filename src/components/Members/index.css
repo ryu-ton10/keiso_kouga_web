@@ -1,8 +1,9 @@
-/* ========= メンバー紹介 =========== */
+/* ========= main =========== */
 .member {
     position: relative;
 }
 
+/* ========= 見出しセクション =========== */
 .member-title {
     height: 200px;
     vertical-align: middle;
@@ -41,6 +42,7 @@
     padding: 0 0 0 40px;
 }
 
+/* ========= メンバー一覧 =========== */
 .member-cell {
     padding: 40px 40px 50px 40px;
     text-align:center;
@@ -51,18 +53,12 @@
     justify-content: center;
 }
 
-.member-cell p {
-    font-family: 'Hiragino Mincho Pro';
-    font-size: 32pt;
-    color: rgba(105, 105, 105, 1);
-    padding: 20px 0px 0px 0px;
-}
-
 .member-cell img {
     max-width: 250px;
     max-height: 250px;
 }
 
+/* ========= サムネイル部分 =========== */
 .member-icon {
     padding: 30px 30px;
     text-align: center;
@@ -72,16 +68,32 @@
     border-radius: 50%;
 }
 
-.ant-row {
+.member-cell .ant-row {
     padding: 50px 0 50px 0;
+}
+
+/* ========= 名前と作品エリア =========== */
+.member-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.member-profile p {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 32pt;
+    color: rgba(105, 105, 105, 1);
+    padding: 20px 0px 0px 0px;
 }
 
 .member-profile .ant-row {
     padding: 0;
 }
 
-.member-profile {
-    text-align: left;
+.member-profile p {
+    padding: 0 20px 0 0;
+    margin-bottom: 0;
 }
 
 .member-profile .ant-image {
@@ -89,6 +101,13 @@
     max-height: 50px 50px;
 }
 
-.member-work {
-    text-align: center;
+.member-profile a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.member-profile .anticon-twitter-circle {
+    font-size: 36px;
+    color: rgb(29,161,241);
 }

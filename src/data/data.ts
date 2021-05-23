@@ -6,12 +6,14 @@ export const members = [
         name: "とんと",
         image: "tonto_icon.webp",
         works: ["gallery_1.webp", "gallery_2.webp"],
+        twitter_url: "https://twitter.com/tsu7ma4_10nto/",
     },
     {
         id: nanoid(),
         name: "つきうさぎ",
         image: "tuki_icon.webp",
         works: ["gallery_1.webp", "gallery_2.webp"],
+        twitter_url: "https://twitter.com/moonrabbitphoto/",
     },
 ]
 

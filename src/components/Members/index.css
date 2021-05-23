@@ -82,20 +82,24 @@
     text-align: left;
 }
 
-.member-profile p {
+.member-profile .name {
     font-family: 'Hiragino Mincho Pro';
     font-size: 32pt;
     color: rgba(105, 105, 105, 1);
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 0;
+}
+
+.member-profile p {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 14pt;
+    color: rgba(105, 105, 105, 1);
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .member-profile .ant-row {
     padding: 0;
-}
-
-.member-profile p {
-    padding: 0 20px 0 0;
-    margin-bottom: 0;
 }
 
 .member-profile .ant-image {

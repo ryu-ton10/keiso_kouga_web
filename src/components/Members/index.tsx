@@ -9,6 +9,8 @@ type Member = {
     image: string;
     works: string[];
     twitter_url: string;
+    keywords: string[];
+    camera: string;
 }
 
 type Props = {
@@ -31,7 +33,7 @@ const Members: React.FC<Props> = (props) => {
             </div>
             <div className="member-cell">
                 {members.map((member) => {
-                    const { name, image, works, twitter_url } = member;
+                    const { name, image, works, twitter_url, keywords, camera } = member;
                     return (
                         <Row>
                             <Col lg={12} xs={24} className="member-icon">
@@ -39,8 +41,17 @@ const Members: React.FC<Props> = (props) => {
                             </Col>
                             <Col lg={12} xs={24} className="member-profile">
                                 <Row>
-                                    <p>{name}</p>
+                                    <p className="name">{name}</p>
                                     <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterCircleFilled /></a>
+                                </Row>
+                                <p>使用機材: {camera}</p>
+                                <Row>
+                                    <p>Keywords: </p>
+                                    {keywords.map((keyword) => {
+                                        return (
+                                            <p>#{keyword}</p>
+                                        );
+                                    })}
                                 </Row>
                                 <Row>
                                     {works.map((work) => {

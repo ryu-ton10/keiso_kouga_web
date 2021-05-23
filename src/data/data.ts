@@ -7,6 +7,8 @@ export const members = [
         image: "tonto_icon.webp",
         works: ["gallery_1.webp", "gallery_2.webp"],
         twitter_url: "https://twitter.com/tsu7ma4_10nto/",
+        keywords: ["列車", "神社仏閣"],
+        camera: "D3100"
     },
     {
         id: nanoid(),
@@ -14,6 +16,8 @@ export const members = [
         image: "tuki_icon.webp",
         works: ["gallery_1.webp", "gallery_2.webp"],
         twitter_url: "https://twitter.com/moonrabbitphoto/",
+        keywords: ["夜空", "建造物"],
+        camera: "α7 III"
     },
 ]
 

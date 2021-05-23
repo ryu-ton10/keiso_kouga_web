@@ -24,8 +24,8 @@ const Members: React.FC<Props> = (props) => {
             <div className="member-title">
                 <div className="member-title-rgba">
                     <div className="member-title-text">
-                        <div className="member-title-jp">紡ギ人</div>
-                        <div className="member-title-en">Members</div>
+                        <p className="member-title-jp">紡ギ人</p>
+                        <p className="member-title-en">Members</p>
                     </div>
                 </div>
             </div>

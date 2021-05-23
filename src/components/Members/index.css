@@ -32,6 +32,7 @@
     font-size: 48pt;
     color: white;
     padding: 0 0 0 40px;
+    margin-bottom: 0;
 }
 
 .member-title-en {
@@ -40,6 +41,7 @@
     font-size: 14pt;
     color: white;
     padding: 0 0 0 40px;
+    margin-bottom: 0;
 }
 
 /* ========= メンバー一覧 =========== */

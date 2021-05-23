@@ -23,8 +23,8 @@ const Publishment: React.FC<Props> = (props) => {
             <div className="publishment-title">
                 <div className="publishment-title-rgba">
                     <div className="publishment-title-text">
-                        <div className="publishment-title-jp">出版物</div>
-                        <div className="publishment-title-en">Publishment</div>
+                        <p className="publishment-title-jp">出版物</p>
+                        <p className="publishment-title-en">Publishment</p>
                     </div>
                 </div>
             </div>

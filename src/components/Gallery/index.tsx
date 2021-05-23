@@ -14,7 +14,7 @@ type Props = {
 const Gallery: React.FC<Props> = (props) => {
 
     const { photos } = props;
-    const style = { padding: '10px 10px 10px 10px'};
+    const style = { padding: '20px 20px 20px 20px'};
 
     return (
         <div className="gallery">

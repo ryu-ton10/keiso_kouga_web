@@ -1,0 +1,12 @@
+.gallery {
+    position: relative;
+    padding: 0 0 100px 0;
+}
+
+.gallery p {
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 36pt;
+    color: rgba(105, 105, 105, 1);
+}

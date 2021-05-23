@@ -22,3 +22,22 @@ export const books = [
         url: "https://www.amazon.co.jp/dp/B08RY6VBMP/ref=cm_sw_r_tw_awdb_c_x_GxP8FbQ43252P",
     },
 ]
+
+export const photos = [
+    {
+        id: nanoid(),
+        path: "Gallery/gallery_1.webp"
+    },
+    {
+        id: nanoid(),
+        path: "Gallery/gallery_2.webp"
+    },
+    {
+        id: nanoid(),
+        path: "Gallery/gallery_3.webp"
+    },
+    {
+        id: nanoid(),
+        path: "Gallery/gallery_4.webp"
+    },
+]

@@ -65,9 +65,30 @@
 
 .member-icon {
     padding: 30px 30px;
+    text-align: center;
 }
 
-.member-name {
-    padding: 30px 30px;
+.member-icon img {
+    border-radius: 50%;
 }
 
+.ant-row {
+    padding: 50px 0 50px 0;
+}
+
+.member-profile .ant-row {
+    padding: 0;
+}
+
+.member-profile {
+    text-align: left;
+}
+
+.member-profile .ant-image {
+    padding: 5px 5px 5px 5px;
+    max-height: 50px 50px;
+}
+
+.member-work {
+    text-align: center;
+}

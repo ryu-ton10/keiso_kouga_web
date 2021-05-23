@@ -5,11 +5,13 @@ export const members = [
         id: nanoid(),
         name: "とんと",
         image: "tonto_icon.webp",
+        works: ["gallery_1.webp", "gallery_2.webp"],
     },
     {
         id: nanoid(),
         name: "つきうさぎ",
         image: "tuki_icon.webp",
+        works: ["gallery_1.webp", "gallery_2.webp"],
     },
 ]
 

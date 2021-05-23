@@ -14,7 +14,6 @@ type Props = {
 const Gallery: React.FC<Props> = (props) => {
 
     const { photos } = props;
-    const style = { padding: '20px 20px 20px 20px'};
 
     return (
         <div className="gallery">
@@ -22,7 +21,7 @@ const Gallery: React.FC<Props> = (props) => {
                 {photos.map((photo) => {
                     const { path } = photo;
                     return (
-                        <Col lg={12} xs={24}><Image src={path} style={style}/></Col>
+                        <Col lg={12} xs={12}><Image src={path} /></Col>
                     );
                 })}
             </Row>

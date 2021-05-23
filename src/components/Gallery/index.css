@@ -3,6 +3,11 @@
     padding: 0 0 150px 0;
 }
 
+.gallery .ant-image-img {
+    padding: 5px 5px 5px 5px;
+
+}
+
 .gallery p {
     padding-top: 30px;
     text-align: center;

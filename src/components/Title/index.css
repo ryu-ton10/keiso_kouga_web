@@ -67,20 +67,9 @@
     }
 }
 
-@media (min-width: 768px) {
-    .title-main {
-        font-size: 64pt;
-        padding: 0 0 20px 0;
-    }
-    .title-sub {
-        font-size: 18pt;
-        padding: 20px 0 0 0;
-    }
-}
-
 @media (min-width: 960px) {
     .title-main {
-        font-size: 72pt;
+        font-size: 64pt;
         padding: 0 0 20px 0;
     }
     .title-sub {

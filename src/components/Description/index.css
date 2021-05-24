@@ -1,18 +1,15 @@
-/* ========= メンバー紹介 =========== */
+/* ========= サークル概要文 =========== */
 .description {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 500px;
-    max-height: 800px;
 }
 
 .description-title {
     height: 30%;
     text-align: center;
     font-family: 'Hiragino Mincho Pro';
-    font-size: 36pt;
     color: rgba(105, 105, 105, 1);
 }
 
@@ -20,10 +17,59 @@
     height: 70%;
     text-align: center;
     font-family: 'Hiragino Mincho Pro';
-    font-size: 14pt;
     color: rgba(105, 105, 105, 1);
-    animation-name: description-fade-in;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
 }
+
+/* ========= テキストのレスポンスデザイン =========== */
+@media (min-width: 280px) {
+    .description {
+        min-height: 300px;
+        max-height: 500px;
+    }
+    .description-title {
+        font-size: 14pt;
+    }
+    .description-content {
+        font-size: 8pt;
+    }
+}
+
+@media (min-width: 360px) {
+    .description {
+        min-height: 300px;
+        max-height: 500px;
+    }
+    .description-title {
+        font-size: 18pt;
+    }
+    .description-content {
+        font-size: 9pt;
+    }
+}
+
+@media (min-width: 576px) {
+    .description {
+        min-height: 400px;
+        max-height: 500px;
+    }
+    .description-title {
+        font-size: 24pt;
+    }
+    .description-content {
+        font-size: 12pt;
+    }
+}
+
+@media (min-width: 960px) {
+    .description {
+        min-height: 500px;
+        max-height: 800px;
+    }
+    .description-title {
+        font-size: 28pt;
+    }
+    .description-content {
+        font-size: 14pt;
+    }
+}
+

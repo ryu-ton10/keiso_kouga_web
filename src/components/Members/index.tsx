@@ -36,23 +36,15 @@ const Members: React.FC<Props> = (props) => {
                     const { name, image, works, twitter_url, keywords, camera } = member;
                     return (
                         <Row>
-                            <Col lg={12} xs={24} className="member-icon">
+                            <Col lg={12} xs={24} className="member-profile-left">
                                 <img src={process.env.PUBLIC_URL + image} alt="icon" />
-                            </Col>
-                            <Col lg={12} xs={24} className="member-profile">
                                 <Row>
                                     <p className="name">{name}</p>
                                     <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterCircleFilled /></a>
                                 </Row>
                                 <p>使用機材: {camera}</p>
-                                <Row>
-                                    <p>Keywords: </p>
-                                    {keywords.map((keyword) => {
-                                        return (
-                                            <p>#{keyword}</p>
-                                        );
-                                    })}
-                                </Row>
+                            </Col>
+                            <Col lg={12} xs={24} className="member-profile-right">
                                 <Row>
                                     {works.map((work) => {
                                         return (

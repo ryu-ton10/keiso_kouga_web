@@ -60,37 +60,38 @@
     max-height: 250px;
 }
 
-/* ========= サムネイル部分 =========== */
-.member-icon {
-    padding: 30px 30px;
-    text-align: center;
-}
-
-.member-icon img {
-    border-radius: 50%;
-}
-
 .member-cell .ant-row {
     padding: 50px 0 50px 0;
 }
 
-/* ========= 名前と作品エリア =========== */
-.member-profile {
+/* ========= サムネイルとプロフィール =========== */
+.member-profile-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: left;
 }
 
-.member-profile .name {
+.member-profile-left img {
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+.member-profile-left .ant-row {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+}
+
+.member-profile-left .name {
     font-family: 'Hiragino Mincho Pro';
     font-size: 32pt;
     color: rgba(105, 105, 105, 1);
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0 20px 0;
     margin-bottom: 0;
 }
 
-.member-profile p {
+.member-profile-left p {
     font-family: 'Hiragino Mincho Pro';
     font-size: 14pt;
     color: rgba(105, 105, 105, 1);
@@ -98,22 +99,28 @@
     margin-bottom: 0;
 }
 
-.member-profile .ant-row {
-    padding: 0;
+.member-profile-left a {
+    display: flex;
+    align-items: center;
 }
 
-.member-profile .ant-image {
+.member-profile-left .anticon-twitter-circle {
+    font-size: 36px;
+    color: rgb(29,161,241);
+}
+
+/* ========= 作例エリア =========== */
+.member-profile-right {
+    display: flex;
+    align-items: center;
+}
+
+.member-profile-right .ant-row {
+    justify-content: center;
+}
+
+.member-profile-right .ant-image {
     padding: 5px 5px 5px 5px;
     max-height: 50px 50px;
 }
 
-.member-profile a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.member-profile .anticon-twitter-circle {
-    font-size: 36px;
-    color: rgb(29,161,241);
-}

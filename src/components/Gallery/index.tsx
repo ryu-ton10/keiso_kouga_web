@@ -21,7 +21,7 @@ const Gallery: React.FC<Props> = (props) => {
                 {photos.map((photo) => {
                     const { path } = photo;
                     return (
-                        <Col lg={12} xs={12}><Image src={path} /></Col>
+                        <Col xs={24} sm={24} md={12} lg={12} ><Image src={path} /></Col>
                     );
                 })}
             </Row>

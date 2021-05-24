@@ -102,27 +102,27 @@
 
 /* ========= メンバー一覧 =========== */
 .member-cell {
-    padding: 40px 40px 50px 40px;
     text-align:center;
     background-color: rgba(245, 245, 245, 1);
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.member-cell img {
-    max-width: 250px;
-    max-height: 250px;
+@media (min-width: 280px) {
+    .member-cell .ant-row {
+        padding: 5px 0 10px 0;
+    }
 }
 
-.member-cell .ant-row {
-    padding: 50px 0 50px 0;
+@media (min-width: 576px) {
+    .member-cell .ant-row {
+        padding: 5px 0 20px 0;
+    }
 }
 
 /* ========= サムネイルとプロフィール =========== */
 .member-profile-left {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -132,7 +132,6 @@
     border-radius: 50%;
 }
 
-
 .member-profile-left .ant-row {
     padding: 0;
     text-align: center;
@@ -141,15 +140,12 @@
 
 .member-profile-left .name {
     font-family: 'Hiragino Mincho Pro';
-    font-size: 32pt;
     color: rgba(105, 105, 105, 1);
-    padding: 20px 0 20px 0;
     margin-bottom: 0;
 }
 
 .member-profile-left p {
     font-family: 'Hiragino Mincho Pro';
-    font-size: 14pt;
     color: rgba(105, 105, 105, 1);
     padding: 0;
     margin-bottom: 0;
@@ -161,22 +157,98 @@
 }
 
 .member-profile-left .anticon-twitter-circle {
-    font-size: 36px;
     color: rgb(29,161,241);
+}
+
+/* ========= サムネとプロフィールのレスポンスデザイン =========== */
+@media (min-width: 280px) {
+    .member-cell {
+        padding: 0;
+    }
+    .member-profile-left img {
+        padding: 20px 0 20px 0;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .member-profile-left .name {
+        font-size: 32pt;
+        padding: 0;
+    }
+    .member-profile-left p {
+        font-size: 14pt;
+    }
+    .member-profile-left .anticon-twitter-circle {
+        font-size: 32pt;
+    }
+}
+
+@media (min-width: 768px) {
+    .member-cell {
+        padding: 20px 20px 20px 20px;
+    }
+    .member-profile-left img {
+        padding: 20px 0 20px 0;
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .member-profile-left .name {
+        font-size: 32pt;
+        padding: 0;
+    }
+    .member-profile-left p {
+        font-size: 14pt;
+    }
+    .member-profile-left .anticon-twitter-circle {
+        font-size: 36pt;
+    }
 }
 
 /* ========= 作例エリア =========== */
 .member-profile-right {
     display: flex;
     align-items: center;
-}
-
-.member-profile-right .ant-row {
     justify-content: center;
 }
 
-.member-profile-right .ant-image {
-    padding: 5px 5px 5px 5px;
-    max-height: 50px 50px;
+/* ========= 作例エリアのレスポンスデザイン =========== */
+@media (min-width: 280px) {
+    .member-profile-right {
+        padding: 10px 0 50px 0;
+        display: inline-block;
+    }
+    .member-profile-right .ant-image {
+        padding: 5px 0 5px 0;
+        width: 60%;
+    }
+}
+
+@media (min-width: 360px) {
+    .member-profile-right {
+        padding: 10px 0 50px 0;
+    }
+    .member-profile-right .ant-image {
+        padding: 5px 0 5px 0;
+        width: 70%;
+    }
+}
+
+@media (min-width: 576px) {
+    .member-profile-right {
+        padding: 20px 0 70px 0;
+    }
+    .member-profile-right .ant-image {
+        padding: 5px 0 5px 0;
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .member-profile-right {
+        padding: 20px 0 70px 0;
+    }
+    .member-profile-right .ant-image {
+        padding: 5px 0 5px 0;
+        width: 80%;
+    }
 }
 

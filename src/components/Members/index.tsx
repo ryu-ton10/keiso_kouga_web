@@ -33,10 +33,10 @@ const Members: React.FC<Props> = (props) => {
             </div>
             <div className="member-cell">
                 {members.map((member) => {
-                    const { name, image, works, twitter_url, keywords, camera } = member;
+                    const { name, image, works, twitter_url, camera } = member;
                     return (
                         <Row>
-                            <Col lg={12} xs={24} className="member-profile-left">
+                            <Col xs={24} sm={12} md={10} lg={10} className="member-profile-left">
                                 <img src={process.env.PUBLIC_URL + image} alt="icon" />
                                 <Row>
                                     <p className="name">{name}</p>
@@ -44,14 +44,12 @@ const Members: React.FC<Props> = (props) => {
                                 </Row>
                                 <p>使用機材: {camera}</p>
                             </Col>
-                            <Col lg={12} xs={24} className="member-profile-right">
-                                <Row>
-                                    {works.map((work) => {
-                                        return (
-                                            <Image src={process.env.PUBLIC_URL + "Gallery/" + work} />
-                                        );
-                                    })}
-                                </Row>
+                            <Col xs={24} sm={12} md={14} lg={14} className="member-profile-right">
+                                {works.map((work) => {
+                                    return (
+                                        <Image src={process.env.PUBLIC_URL + "Gallery/" + work} />
+                                    );
+                                })}
                             </Col>
                         </Row>
                     );

@@ -5,7 +5,6 @@
 
 /* ========= 見出しセクション =========== */
 .member-title {
-    height: 200px;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -29,19 +28,76 @@
 .member-title-jp {
     text-align: left;
     font-family: 'Hiragino Mincho Pro';
-    font-size: 48pt;
     color: white;
-    padding: 0 0 0 40px;
     margin-bottom: 0;
 }
 
 .member-title-en {
     text-align: left;
     font-family: 'Hiragino Mincho Pro';
-    font-size: 14pt;
     color: white;
-    padding: 0 0 0 40px;
     margin-bottom: 0;
+}
+
+/* ========= 見出しのレスポンスデザイン =========== */
+@media (min-width: 280px) {
+    .member-title {
+        height: 100px;
+    }
+    .member-title-text p {
+        padding: 0 0 0 15px;
+    }
+    .member-title-jp {
+        font-size: 24pt;
+    }
+    .member-title-en {
+        font-size: 9pt;
+    }
+}
+
+@media (min-width: 360px) {
+    .member-title {
+        height: 120px;
+    }
+    .member-title-text p {
+        padding: 0 0 0 20px;
+    }
+    .member-title-jp {
+        font-size: 28pt;
+    }
+    .member-title-en {
+        font-size: 11pt;
+    }
+}
+
+@media (min-width: 576px) {
+    .member-title {
+        height: 150px;
+    }
+    .member-title-text p {
+        padding: 0 0 0 30px;
+    }
+    .member-title-jp {
+        font-size: 36pt;
+    }
+    .member-title-en {
+        font-size: 14pt;
+    }
+}
+
+@media (min-width: 960px) {
+    .member-title {
+        height: 180px;
+    }
+    .member-title-text p {
+        padding: 0 0 0 40px;
+    }
+    .member-title-jp {
+        font-size: 40pt;
+    }
+    .member-title-en {
+        font-size: 16pt;
+    }
 }
 
 /* ========= メンバー一覧 =========== */

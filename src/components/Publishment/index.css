@@ -3,8 +3,8 @@
     position: relative;
 }
 
+/* ========= 出版物の見出し =========== */
 .publishment-title {
-    height: 200px;
     vertical-align: middle;
     background-repeat: no-repeat;
     background-position: center 50%;
@@ -28,7 +28,6 @@
 .publishment-title-jp {
     text-align: left;
     font-family: 'Hiragino Mincho Pro';
-    font-size: 48pt;
     color: white;
     padding: 0 0 0 40px;
     margin-bottom: 0;
@@ -37,19 +36,88 @@
 .publishment-title-en {
     text-align: left;
     font-family: 'Hiragino Mincho Pro';
-    font-size: 16pt;
     color: white;
     padding: 0 0 0 40px;
     margin-bottom: 0;
 }
 
+/* ========= 見出しのレスポンスデザイン =========== */
+@media (min-width: 280px) {
+    .publishment-title {
+        height: 100px;
+    }
+    .publishment-title p {
+        padding: 0 0 0 15px;
+    }
+    .publishment-title-jp {
+        font-size: 24pt;
+    }
+    .publishment-title-en {
+        font-size: 9pt;
+    }
+
+}
+
+@media (min-width: 360px) {
+    .publishment-title {
+        height: 120px;
+    }
+    .publishment-title p {
+        padding: 0 0 0 20px;
+    }
+    .publishment-title-jp {
+        font-size: 28pt;
+    }
+    .publishment-title-en {
+        font-size: 11pt;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .publishment-title {
+        height: 150px;
+    }
+    .publishment-title p {
+        padding: 0 0 0 30px;
+    }
+    .publishment-title-jp {
+        font-size: 36pt;
+    }
+    .publishment-title-en {
+        font-size: 14pt;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .publishment-title {
+        height: 180px;
+    }
+    .publishment-title p {
+        padding: 0 0 0 40px;
+    }
+    .publishment-title-jp {
+        font-size: 40pt;
+    }
+    .publishment-title-en {
+        font-size: 16pt;
+    }
+
+}
+
+/* ========= 同人誌詳細コンテナ =========== */
 .publishment-cell {
-    padding: 100px 70px 100px 70px;
     background-color: rgba(245, 245, 245, 1);
 }
 
 .publishment-icon {
     text-align: center;
+}
+
+.publishment-icon img {
+    height: 300px;
+    width: auto;
 }
 
 .publishment-descriptions {
@@ -60,20 +128,78 @@
     justify-content: center;
 }
 
-.publishment-descriptions h2 {
+.publishment-descriptions p {
+    margin-bottom: 0;
+}
+
+.publishment-name {
     font-family: 'Hiragino Mincho Pro';
-    font-size: 32pt;
     color: gray;
     padding: 20px 0 20px 0;
 }
 
-.publishment-descriptions h3 {
+.publishment-detail {
     font-family: 'Hiragino Mincho Pro';
-    font-size: 14pt;
     color: gray;
 }
 
-.publishment-icon img {
-    height: 300px;
-    width: auto;
+/* ========= 同人誌詳細レスポンスクエリ =========== */
+@media (min-width: 280px) {
+    .publishment-cell {
+        padding: 50px 30px 50px 30px;
+    }
+    .publishment-name {
+        font-size: 18pt;
+    }
+    .publishment-detail {
+        font-size: 9pt;
+    }
+    .publishment-descriptions img {
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .publishment-cell {
+        padding: 70px 70px 70px 70px;
+    }
+    .publishment-name {
+        font-size: 24pt;
+    }
+    .publishment-detail {
+        font-size: 9pt;
+    }
+    .publishment-descriptions img {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .publishment-cell {
+        padding: 80px 80px 80px 80px;
+    }
+    .publishment-name {
+        font-size: 28pt;
+    }
+    .publishment-detail {
+        font-size: 12pt;
+    }
+    .publishment-descriptions img {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .publishment-cell {
+        padding: 80px 100px 80px 100px;
+    }
+    .publishment-name {
+        font-size: 30pt;
+    }
+    .publishment-detail {
+        font-size: 14pt;
+    }
+    .publishment-descriptions img {
+        padding: 20px 0 0 0;
+    }
 }

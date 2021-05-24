@@ -23,7 +23,7 @@ const Publishment: React.FC<Props> = (props) => {
             <div className="publishment-title">
                 <div className="publishment-title-rgba">
                     <div className="publishment-title-text">
-                        <p className="publishment-title-jp">出版物</p>
+                        <p className="publishment-title-jp">同人誌</p>
                         <p className="publishment-title-en">Publishment</p>
                     </div>
                 </div>
@@ -34,12 +34,12 @@ const Publishment: React.FC<Props> = (props) => {
                         const { title, description, image, url } = book;
                         return (
                         <>
-                            <Col lg={10} xs={24} className="publishment-icon">
+                            <Col xs={24} sm={12} md={12} lg={10} className="publishment-icon">
                                 <Image src={process.env.PUBLIC_URL + image} alt="icon" />
                             </Col>
-                            <Col lg={14} xs={24} className="publishment-descriptions">
-                                <h2>{title}</h2>
-                                <h3>{description}</h3>
+                            <Col xs={24} sm={12} md={12} lg={14} className="publishment-descriptions">
+                                <p className="publishment-name">{title}</p>
+                                <p className="publishment-detail">{description}</p>
                                 <a href={url} rel="noopener noreferrer" target="_blank">
                                     <img src={process.env.PUBLIC_URL + "assocbutt_or_detail.png"} alt="amazon icon"/>
                                 </a>

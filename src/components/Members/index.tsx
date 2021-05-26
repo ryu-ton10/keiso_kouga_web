@@ -38,7 +38,7 @@ const Members: React.FC<Props> = (props) => {
                         <Row>
                             <Col xs={24} sm={12} md={10} lg={10} className="member-profile-left">
                                 <img src={process.env.PUBLIC_URL + image} alt="icon" />
-                                <Row>
+                                <Row className="names">
                                     <p className="name">{name}</p>
                                     <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterCircleFilled /></a>
                                 </Row>

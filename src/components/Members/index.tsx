@@ -45,7 +45,6 @@ const Members: React.FC<Props> = (props) => {
                                 <p>使用機材: {camera}</p>
                             </Col>
                             <Col xs={24} sm={12} md={14} lg={14} className="member-profile-right">
-                                <p>{name}'s Gallery</p>
                                 <Carousel autoplay>
                                     {works.map((work) => {
                                         return (

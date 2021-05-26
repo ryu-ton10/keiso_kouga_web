@@ -6,7 +6,7 @@ import Members from '../components/Members';
 import Publishment from '../components/Publishment';
 import './App.css';
 import 'antd/dist/antd.css';
-import { members, books, photos } from './../data/data';
+import { members, books } from './../data/data';
 import { Layout } from 'antd';
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
       <div className="main">
         <Title />
         <Description />
-        <Gallery photos={photos}/>
+        <Gallery />
         <Members members={members}/>
         <Publishment books={books}/>
         <Layout>

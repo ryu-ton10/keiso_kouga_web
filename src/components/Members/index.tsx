@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Row, Col, Image } from 'antd';
+import { Row, Col, Image, Carousel } from 'antd';
 import { TwitterCircleFilled } from '@ant-design/icons';
 
 type Member = {
@@ -45,11 +45,14 @@ const Members: React.FC<Props> = (props) => {
                                 <p>使用機材: {camera}</p>
                             </Col>
                             <Col xs={24} sm={12} md={14} lg={14} className="member-profile-right">
-                                {works.map((work) => {
-                                    return (
-                                        <Image src={process.env.PUBLIC_URL + "Gallery/" + work} />
-                                    );
-                                })}
+                                <p>{name}'s Gallery</p>
+                                <Carousel autoplay>
+                                    {works.map((work) => {
+                                        return (
+                                            <Image src={process.env.PUBLIC_URL + "Gallery/" + work} />
+                                        );
+                                    })}
+                                </Carousel>
                             </Col>
                         </Row>
                     );

@@ -5,7 +5,11 @@ export const members = [
         id: nanoid(),
         name: "とんと",
         image: "tonto_icon.webp",
-        works: ["gallery_1.webp", "gallery_2.webp"],
+        works: [
+            "tonto/tonto_work_1.webp",
+            "tonto/tonto_work_2.webp",
+            "tonto/tonto_work_3.webp",
+        ],
         twitter_url: "https://twitter.com/tsu7ma4_10nto/",
         keywords: ["列車", "神社仏閣"],
         camera: "D3100"
@@ -14,7 +18,12 @@ export const members = [
         id: nanoid(),
         name: "つきうさぎ",
         image: "tuki_icon.webp",
-        works: ["gallery_1.webp", "gallery_2.webp"],
+        works: [
+            "tuki/tuki_work_3.webp",
+            "tuki/tuki_work_4.webp",
+            "tuki/tuki_work_5.webp",
+            "tuki/tuki_work_6.webp",
+        ],
         twitter_url: "https://twitter.com/moonrabbitphoto/",
         keywords: ["夜空", "建造物"],
         camera: "α7 III"

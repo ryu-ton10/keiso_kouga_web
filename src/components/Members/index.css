@@ -167,18 +167,39 @@
     }
     .member-profile-left img {
         padding: 20px 0 20px 0;
-        max-width: 200px;
-        max-height: 200px;
+        max-width: 180px;
+        max-height: 180px;
     }
     .member-profile-left .name {
-        font-size: 32pt;
+        font-size: 28pt;
         padding: 0;
     }
     .member-profile-left p {
-        font-size: 14pt;
+        font-size: 12pt;
     }
     .member-profile-left .anticon-twitter-circle {
-        font-size: 32pt;
+        font-size: 28pt;
+    }
+}
+
+@media (min-width: 576px) {
+    .member-cell {
+        padding: 0;
+    }
+    .member-profile-left img {
+        padding: 20px 0 20px 0;
+        max-width: 180px;
+        max-height: 180px;
+    }
+    .member-profile-left .name {
+        font-size: 24pt;
+        padding: 0;
+    }
+    .member-profile-left p {
+        font-size: 12pt;
+    }
+    .member-profile-left .anticon-twitter-circle {
+        font-size: 24pt;
     }
 }
 
@@ -188,18 +209,18 @@
     }
     .member-profile-left img {
         padding: 20px 0 20px 0;
-        max-width: 250px;
-        max-height: 250px;
+        max-width: 200px;
+        max-height: 200px;
     }
     .member-profile-left .name {
-        font-size: 32pt;
+        font-size: 28pt;
         padding: 0;
     }
     .member-profile-left p {
-        font-size: 14pt;
+        font-size: 12pt;
     }
     .member-profile-left .anticon-twitter-circle {
-        font-size: 36pt;
+        font-size: 28pt;
     }
 }
 
@@ -242,7 +263,7 @@
         width: 70%;
     }
     .member-profile-right p {
-        font-size: 14pt;
+        font-size: 12pt;
     }
 }
 

@@ -49,7 +49,7 @@ const Members: React.FC<Props> = (props) => {
                                 <Carousel autoplay>
                                     {works.map((work) => {
                                         return (
-                                            <Image src={process.env.PUBLIC_URL + "Gallery/" + work} />
+                                            <Image src={process.env.PUBLIC_URL + "MajorWorks/" + work} />
                                         );
                                     })}
                                 </Carousel>

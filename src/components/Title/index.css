@@ -18,7 +18,7 @@
     height: 100%;
     text-align: center;
     animation-name: fade-in;
-    animation-duration: 1.0s;
+    animation-duration: 2.0s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     justify-content: center;

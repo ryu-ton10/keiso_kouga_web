@@ -4,7 +4,6 @@ import { Row, Col, Image } from 'antd';
 import { TwitterCircleFilled } from '@ant-design/icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
-import 'swiper/components/scrollbar/scrollbar.scss';
 // Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css"
@@ -33,10 +32,8 @@ const Members: React.FC<Props> = (props) => {
         <div className="member">
             <div className="member-title">
                 <div className="member-title-rgba">
-                    <div className="member-title-text">
-                        <p className="member-title-jp">紡ギ人</p>
-                        <p className="member-title-en">Members</p>
-                    </div>
+                    <p className="member-title-jp">紡ギ人</p>
+                    <p className="member-title-en">Members</p>
                 </div>
             </div>
             <div className="member-cell">

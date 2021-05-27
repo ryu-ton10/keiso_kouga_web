@@ -12,17 +12,13 @@
     background-image: url("../../assets/member.webp");
 }
 
-.member-title-text {
+.member-title-rgba {
     height: 100%;
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-}
-
-.member-title-rgba {
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .member-title-jp {
@@ -30,6 +26,7 @@
     font-family: 'Hiragino Mincho Pro';
     color: white;
     margin-bottom: 0;
+    padding: 0 0 0 40px;
 }
 
 .member-title-en {
@@ -37,6 +34,7 @@
     font-family: 'Hiragino Mincho Pro';
     color: white;
     margin-bottom: 0;
+    padding: 0 0 0 40px;
 }
 
 /* ========= 見出しのレスポンスデザイン =========== */

@@ -15,10 +15,6 @@
 .publishment-title-rgba {
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-}
-
-.publishment-title-text {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: left;

@@ -45,11 +45,10 @@ const Members: React.FC<Props> = (props) => {
                                 <p>使用機材: {camera}</p>
                             </Col>
                             <Col xs={24} sm={12} md={14} lg={14} className="member-profile-right">
-                                <Image src={process.env.PUBLIC_URL + "MajorWorks/tonto/tonto_work_1.webp"} />
                                 <Carousel autoplay>
                                     {works.map((work) => {
                                         return (
-                                            <Image src={process.env.PUBLIC_URL + work} />
+                                            <Image src={process.env.PUBLIC_URL + "MajorWorks/" + work} />
                                         );
                                     })}
                                 </Carousel>

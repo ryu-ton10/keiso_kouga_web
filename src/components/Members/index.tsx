@@ -57,7 +57,7 @@ const Members: React.FC<Props> = (props) => {
                                     {works.map((work) => {
                                         return (
                                             <SwiperSlide>
-                                                <Image src={process.env.PUBLIC_URL + "MajorWorks/" + work} />
+                                                <Image src={process.env.PUBLIC_URL + work} />
                                             </SwiperSlide>
                                         );
                                     })}

@@ -9,6 +9,7 @@ export const members = [
             "tonto/tonto_work_1.webp",
             "tonto/tonto_work_2.webp",
             "tonto/tonto_work_3.webp",
+            "tonto/tonto_work_chayagai.webp",
         ],
         twitter_url: "https://twitter.com/tsu7ma4_10nto/",
         keywords: ["列車", "神社仏閣"],

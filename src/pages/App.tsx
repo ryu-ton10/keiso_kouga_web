@@ -18,8 +18,8 @@ function App() {
         <Title />
         <Description />
         <Gallery />
-        <Members members={members}/>
-        <Publishment books={books}/>
+        <Members members={members} />
+        <Publishment books={books} />
         <Layout>
           <Footer style={{ textAlign: 'center' }}>©︎ 2021 Ryusei Nomi</Footer>
         </Layout>

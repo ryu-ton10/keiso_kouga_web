@@ -8,10 +8,15 @@ import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css"
 
+type Member_Image = {
+    webp: string;
+    jpeg: string;
+}
+
 type Member = {
     id: string;
     name: string;
-    image: string;
+    icon: Member_Image;
     works: string[];
     twitter_url: string;
     keywords: string[];
@@ -38,11 +43,15 @@ const Members: React.FC<Props> = (props) => {
             </div>
             <div className="member-cell">
                 {members.map((member) => {
-                    const { name, image, works, twitter_url, camera } = member;
+                    const { name, icon, works, twitter_url, camera } = member;
+                    const { webp, jpeg } = icon;
                     return (
                         <Row>
                             <Col xs={24} sm={12} md={10} lg={10} className="member-profile-left">
-                                <img src={process.env.PUBLIC_URL + image} alt="icon" />
+                                <picture>
+                                    <source type="image/webp" srcSet={process.env.PUBLIC_URL + webp}></source>
+                                    <img src={process.env.PUBLIC_URL + jpeg} alt="icon" />
+                                </picture>
                                 <Row className="names">
                                     <p className="name">{name}</p>
                                     <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterCircleFilled /></a>

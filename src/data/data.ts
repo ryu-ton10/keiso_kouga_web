@@ -4,7 +4,10 @@ export const members = [
     {
         id: nanoid(),
         name: "とんと",
-        image: "Icons/tonto_icon.webp",
+        icon: {
+            webp:"Icons/tonto_icon.webp",
+            jpeg:"Icons/tonto_icon.jpeg",
+        },
         works: [
             "MajorWorks/tonto/tonto_work_1.webp",
             "MajorWorks/tonto/tonto_work_2.webp",
@@ -18,7 +21,10 @@ export const members = [
     {
         id: nanoid(),
         name: "つきうさぎ",
-        image: "Icons/tuki_icon.webp",
+        icon: {
+            webp:"Icons/tuki_icon.webp",
+            jpeg:"Icons/tuki_icon.jpeg",
+        },
         works: [
             "MajorWorks/tuki/tuki_work_3.webp",
             "MajorWorks/tuki/tuki_work_4.webp",

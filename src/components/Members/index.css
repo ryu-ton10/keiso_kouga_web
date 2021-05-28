@@ -219,6 +219,10 @@
     border: 5px solid white;
 }
 
+.member-profile-right .swiper-container {
+    padding-bottom: 40px;
+}
+
 /* ========= 作例エリアのレスポンスデザイン =========== */
 @media (min-width: 280px) {
     .member-profile-right {

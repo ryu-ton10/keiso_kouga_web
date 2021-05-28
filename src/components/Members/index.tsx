@@ -3,10 +3,10 @@ import './index.css';
 import { Row, Col, Image } from 'antd';
 import { TwitterOutlined } from '@ant-design/icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
+import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
 // Swiper styles
 import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css"
+import 'swiper/components/pagination/pagination.scss';
 
 type Member_Image = {
     webp: string;
@@ -27,7 +27,7 @@ type Props = {
     members: Member[];
 }
 
-SwiperCore.use([Navigation, Autoplay]);
+SwiperCore.use([Pagination, Autoplay]);
 
 const Members: React.FC<Props> = (props) => {
 
@@ -57,8 +57,8 @@ const Members: React.FC<Props> = (props) => {
                             </Col>
                             <Col xs={24} sm={12} md={14} lg={14} className="member-profile-right">
                                 <Swiper
-                                    autoplay={{delay: 3000}}
-                                    navigation={true}
+                                    autoplay={{delay: 2000}}
+                                    pagination={{ clickable: true }}
                                 >
                                     {works.map((work) => {
                                         return (

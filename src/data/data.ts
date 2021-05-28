@@ -3,31 +3,6 @@ import { nanoid } from 'nanoid';
 export const members = [
     {
         id: nanoid(),
-        name: "とんと",
-        icon: {
-            webp:"Icons/tonto_icon.webp",
-            jpeg:"Icons/tonto_icon.jpeg",
-        },
-        works: [
-            {
-                webp: "MajorWorks/tonto/tonto_work_1.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_1.jpg",
-            },
-            {
-                webp: "MajorWorks/tonto/tonto_work_2.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_2.jpg",
-            },
-            {
-                webp: "MajorWorks/tonto/tonto_work_3.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_3.jpg",
-            },
-        ],
-        twitter_url: "https://twitter.com/tsu7ma4_10nto/",
-        keywords: ["列車", "神社仏閣"],
-        camera: "D3100"
-    },
-    {
-        id: nanoid(),
         name: "つきうさぎ",
         icon: {
             webp:"Icons/tuki_icon.webp",
@@ -50,6 +25,31 @@ export const members = [
         twitter_url: "https://twitter.com/moonrabbitphoto/",
         keywords: ["夜空", "建造物"],
         camera: "α7 III"
+    },
+    {
+        id: nanoid(),
+        name: "とんと",
+        icon: {
+            webp:"Icons/tonto_icon.webp",
+            jpeg:"Icons/tonto_icon.jpeg",
+        },
+        works: [
+            {
+                webp: "MajorWorks/tonto/tonto_work_1.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_1.jpg",
+            },
+            {
+                webp: "MajorWorks/tonto/tonto_work_2.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_2.jpg",
+            },
+            {
+                webp: "MajorWorks/tonto/tonto_work_3.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_3.jpg",
+            },
+        ],
+        twitter_url: "https://twitter.com/tsu7ma4_10nto/",
+        keywords: ["列車", "神社仏閣"],
+        camera: "D3100"
     },
 ]
 

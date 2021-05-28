@@ -2,11 +2,16 @@ import React from 'react';
 import './index.css';
 import { Row, Col, Image } from 'antd';
 
+type Publishment_Image = {
+    webp: string;
+    jpeg: string;
+}
+
 type Book = {
     id: string;
     title: string;
     description: string;
-    image: string;
+    image: Publishment_Image;
     url: string;
 }
 
@@ -33,7 +38,7 @@ const Publishment: React.FC<Props> = (props) => {
                         return (
                         <>
                             <Col xs={24} sm={12} md={12} lg={10} className="publishment-icon">
-                                <Image src={process.env.PUBLIC_URL + image} alt="icon" />
+                                <Image src={process.env.PUBLIC_URL + image.webp} fallback={process.env.PUBLIC_URL + image.jpeg} />
                             </Col>
                             <Col xs={24} sm={12} md={12} lg={14} className="publishment-descriptions">
                                 <p className="publishment-name">{title}</p>

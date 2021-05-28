@@ -17,7 +17,7 @@ type Member = {
     id: string;
     name: string;
     icon: Member_Image;
-    works: string[];
+    works: Member_Image[];
     twitter_url: string;
     keywords: string[];
     camera: string;
@@ -44,13 +44,12 @@ const Members: React.FC<Props> = (props) => {
             <div className="member-cell">
                 {members.map((member) => {
                     const { name, icon, works, twitter_url, camera } = member;
-                    const { webp, jpeg } = icon;
                     return (
                         <Row>
                             <Col xs={24} sm={12} md={10} lg={10} className="member-profile-left">
                                 <picture>
-                                    <source type="image/webp" srcSet={process.env.PUBLIC_URL + webp}></source>
-                                    <img src={process.env.PUBLIC_URL + jpeg} alt="icon" />
+                                    <source type="image/webp" srcSet={process.env.PUBLIC_URL + icon.webp}></source>
+                                    <img src={process.env.PUBLIC_URL + icon.jpeg} alt="icon" />
                                 </picture>
                                 <Row className="names">
                                     <p className="name">{name}</p>
@@ -66,7 +65,10 @@ const Members: React.FC<Props> = (props) => {
                                     {works.map((work) => {
                                         return (
                                             <SwiperSlide>
-                                                <Image src={process.env.PUBLIC_URL + work} />
+                                                <Image
+                                                    src={process.env.PUBLIC_URL + work.webp}
+                                                    fallback={process.env.PUBLIC_URL + work.jpeg}
+                                                />
                                             </SwiperSlide>
                                         );
                                     })}

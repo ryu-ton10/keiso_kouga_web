@@ -11,15 +11,15 @@ export const members = [
         works: [
             {
                 webp: "MajorWorks/tuki/tuki_work_sasebo.webp",
-                jpeg: "MajorWorks/tuki/tuki_work_sasebo.jpg",
+                jpeg: "MajorWorks/tuki/tuki_work_sasebo.jpeg",
             },
             {
                 webp: "MajorWorks/tuki/tuki_work_seaside.webp",
-                jpeg: "MajorWorks/tuki/tuki_work_seaside.jpg",
+                jpeg: "MajorWorks/tuki/tuki_work_seaside.jpeg",
             },
             {
                 webp: "MajorWorks/tuki/tuki_work_watchahead.webp",
-                jpeg: "MajorWorks/tuki/tuki_work_watchahead.jpg",
+                jpeg: "MajorWorks/tuki/tuki_work_watchahead.jpeg",
             },
         ],
         twitter_url: "https://twitter.com/moonrabbitphoto/",

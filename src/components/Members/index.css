@@ -229,6 +229,9 @@
         margin: 10px 0 10px 0;
         width: 80%;
     }
+    .member-profile-right .ant-image-img {
+        border: 3px solid white;
+    }
 }
 
 @media (min-width: 360px) {
@@ -238,6 +241,9 @@
     .member-profile-right .ant-image {
         margin: 10px 0 10px 0;
         width: 70%;
+    }
+    .member-profile-right .ant-image-img {
+        border: 3px solid white;
     }
 }
 
@@ -250,6 +256,9 @@
         margin: 5px 0 5px 0;
         width: 90%;
     }
+    .member-profile-right .ant-image-img {
+        border: 5px solid white;
+    }
 }
 
 @media (min-width: 768px) {
@@ -260,6 +269,9 @@
     .member-profile-right .ant-image {
         margin: 5px 0 5px 0;
         width: 80%;
+    }
+    .member-profile-right .ant-image-img {
+        border: 5px solid white;
     }
 }
 

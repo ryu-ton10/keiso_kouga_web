@@ -1,12 +1,12 @@
 import React from 'react';
 import './index.css';
 import { Row, Col, Image } from 'antd';
-import { TwitterOutlined } from '@ant-design/icons';
+import { TwitterCircleFilled } from '@ant-design/icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
+import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
 // Swiper styles
 import "swiper/swiper.min.css";
-import 'swiper/components/pagination/pagination.scss';
+import "swiper/components/navigation/navigation.min.css"
 
 type Member_Image = {
     webp: string;
@@ -27,7 +27,7 @@ type Props = {
     members: Member[];
 }
 
-SwiperCore.use([Pagination, Autoplay]);
+SwiperCore.use([Navigation, Autoplay]);
 
 const Members: React.FC<Props> = (props) => {
 
@@ -51,14 +51,14 @@ const Members: React.FC<Props> = (props) => {
                                 </picture>
                                 <Row className="names">
                                     <p className="name">{name}</p>
-                                    <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterOutlined /></a>
+                                    <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterCircleFilled /></a>
                                 </Row>
                                 <p>使用機材: {camera}</p>
                             </Col>
                             <Col xs={24} sm={12} md={14} lg={14} className="member-profile-right">
                                 <Swiper
-                                    autoplay={{delay: 2000}}
-                                    pagination={{ clickable: true }}
+                                    autoplay={{delay: 3000}}
+                                    navigation={true}
                                 >
                                     {works.map((work) => {
                                         return (

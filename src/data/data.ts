@@ -10,16 +10,16 @@ export const members = [
         },
         works: [
             {
-                webp: "MajorWorks/tuki/tuki_work_4.webp",
-                jpeg: "MajorWorks/tuki/tuki_work_4.jpg",
+                webp: "MajorWorks/tuki/tuki_work_sasebo.webp",
+                jpeg: "MajorWorks/tuki/tuki_work_sasebo.jpg",
             },
             {
-                webp: "MajorWorks/tuki/tuki_work_5.webp",
-                jpeg: "MajorWorks/tuki/tuki_work_5.jpg",
+                webp: "MajorWorks/tuki/tuki_work_seaside.webp",
+                jpeg: "MajorWorks/tuki/tuki_work_seaside.jpg",
             },
             {
-                webp: "MajorWorks/tuki/tuki_work_6.webp",
-                jpeg: "MajorWorks/tuki/tuki_work_6.jpg",
+                webp: "MajorWorks/tuki/tuki_work_watchahead.webp",
+                jpeg: "MajorWorks/tuki/tuki_work_watchahead.jpg",
             },
         ],
         twitter_url: "https://twitter.com/moonrabbitphoto/",

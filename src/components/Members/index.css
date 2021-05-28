@@ -229,9 +229,6 @@
         margin: 10px 0 10px 0;
         width: 80%;
     }
-    .member-profile-right .ant-image-img {
-        border: 5px solid white;
-    }
 }
 
 @media (min-width: 360px) {

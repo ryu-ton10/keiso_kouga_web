@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import { Row, Col, Image } from 'antd';
-import { TwitterCircleFilled } from '@ant-design/icons';
+import { TwitterOutlined } from '@ant-design/icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Autoplay } from 'swiper/core';
 // Swiper styles
@@ -51,7 +51,7 @@ const Members: React.FC<Props> = (props) => {
                                 </picture>
                                 <Row className="names">
                                     <p className="name">{name}</p>
-                                    <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterCircleFilled /></a>
+                                    <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterOutlined /></a>
                                 </Row>
                                 <p>使用機材: {camera}</p>
                             </Col>

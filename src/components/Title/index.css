@@ -54,11 +54,6 @@
         font-size: 10pt;
         padding: 10px 0 0 0;
     }
-    .title-text img {
-        width: 80px;
-        height: 80px;
-        margin: 0 0 10px 0;
-    }
 }
 
 @media (min-width: 576px) {
@@ -69,11 +64,6 @@
     .title-sub {
         font-size: 12pt;
         padding: 10px 0 0 0;
-    }
-    .title-text img {
-        width: 85px;
-        height: 85px;
-        margin: 0 0 20px 0;
     }
 }
 
@@ -86,11 +76,6 @@
         font-size: 14pt;
         padding: 10px 0 0 0;
     }
-    .title-text img {
-        width: 90px;
-        height: 90px;
-        margin: 0 0 20px 0;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -101,11 +86,6 @@
     .title-sub {
         font-size: 16pt;
         padding: 10px 0 0 0;
-    }
-    .title-text img {
-        width: 90px;
-        height: 90px;
-        margin: 0 0 20px 0;
     }
 }
 

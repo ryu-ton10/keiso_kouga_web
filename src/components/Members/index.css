@@ -1,49 +1,35 @@
 /* ========= main =========== */
 .member {
     position: relative;
+    background-color: rgba(245, 245, 245, 1);
 }
 
 /* ========= 見出しセクション =========== */
 .member-title {
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center 50%;
-    background-size: cover;
-    background-image: url("../../assets/member.webp");
-}
-
-.member-title-rgba {
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     justify-content: center;
 }
 
 .member-title-jp {
-    text-align: left;
+    text-align: center;
     font-family: 'Hiragino Mincho Pro';
-    color: white;
+    color: gray;
     margin-bottom: 0;
-    padding: 0 0 0 40px;
 }
 
 .member-title-en {
     text-align: left;
     font-family: 'Hiragino Mincho Pro';
-    color: white;
+    color: gray;
     margin-bottom: 0;
-    padding: 0 0 0 40px;
 }
 
 /* ========= 見出しのレスポンスデザイン =========== */
 @media (min-width: 280px) {
     .member-title {
         height: 100px;
-    }
-    .member-title-text p {
-        padding: 0 0 0 15px;
     }
     .member-title-jp {
         font-size: 24pt;
@@ -57,9 +43,6 @@
     .member-title {
         height: 120px;
     }
-    .member-title-text p {
-        padding: 0 0 0 20px;
-    }
     .member-title-jp {
         font-size: 28pt;
     }
@@ -71,9 +54,6 @@
 @media (min-width: 576px) {
     .member-title {
         height: 150px;
-    }
-    .member-title-text p {
-        padding: 0 0 0 30px;
     }
     .member-title-jp {
         font-size: 36pt;
@@ -87,9 +67,6 @@
     .member-title {
         height: 180px;
     }
-    .member-title-text p {
-        padding: 0 0 0 40px;
-    }
     .member-title-jp {
         font-size: 40pt;
     }
@@ -101,7 +78,6 @@
 /* ========= メンバー一覧 =========== */
 .member-cell {
     text-align: center;
-    background-color: rgba(245, 245, 245, 1);
     flex-direction: column;
     padding: 10px 10px 10px 10px;
 }
@@ -110,14 +86,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(245, 245, 245, 1);
     margin: 10px 10px 20px 10px;
     padding: 15px 10px 15px 10px;
     border-radius: 30px;
 }
 
 .member-cell .ant-row .names{
-    background-color: rgba(245, 245, 245, 1);
     margin: 0;
     padding: 10px 0 10px 0;
 }

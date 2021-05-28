@@ -26,10 +26,8 @@ const Publishment: React.FC<Props> = (props) => {
     return (
         <div className="publishment">
             <div className="publishment-title">
-                <div className="publishment-title-rgba">
-                    <p className="publishment-title-jp">同人誌</p>
-                    <p className="publishment-title-en">Publishment</p>
-                </div>
+                <p className="publishment-title-jp">同人誌</p>
+                <p className="publishment-title-en">Publishment</p>
             </div>
             <div className="publishment-cell">
                 <Row gutter={24}>

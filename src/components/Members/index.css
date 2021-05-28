@@ -219,6 +219,10 @@
     padding-bottom: 20px;
 }
 
+.member-profile-right .ant-image-img {
+    border: 5px solid white;
+}
+
 /* ========= 作例エリアのレスポンスデザイン =========== */
 @media (min-width: 280px) {
     .member-profile-right {

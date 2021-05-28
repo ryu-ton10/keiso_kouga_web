@@ -66,7 +66,6 @@ const Members: React.FC<Props> = (props) => {
                                                 <Image
                                                     src={process.env.PUBLIC_URL + work.webp}
                                                     fallback={process.env.PUBLIC_URL + work.jpeg}
-                                                    style={{border: "4px solid white"}}
                                                 />
                                             </SwiperSlide>
                                         );

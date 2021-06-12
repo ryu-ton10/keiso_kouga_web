@@ -51,6 +51,31 @@ export const members = [
         keywords: ["列車", "神社仏閣"],
         camera: "D3100"
     },
+    {
+        id: nanoid(),
+        name: "燐",
+        icon: {
+            webp:"Icons/rin_icon.webp",
+            jpeg:"Icons/rin_icon.jpeg",
+        },
+        works: [
+            {
+                webp: "MajorWorks/tonto/tonto_work_e6.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_e6.jpg",
+            },
+            {
+                webp: "MajorWorks/tonto/tonto_work_chayagai.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_chayagai.jpg",
+            },
+            {
+                webp: "MajorWorks/tonto/tonto_work_sea.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_sea.jpg",
+            },
+        ],
+        twitter_url: "https://twitter.com/SekiRinphoto",
+        keywords: ["天体", "夜景"],
+        camera: "α7RⅡ / D5300"
+    },
 ]
 
 export const books = [

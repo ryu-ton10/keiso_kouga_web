@@ -86,8 +86,6 @@
 .publishment-descriptions {
     text-align: left;
     position: relative;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -128,7 +126,7 @@
 
 @media (min-width: 576px) {
     .publishment-cell {
-        padding: 70px 70px 70px 70px;
+        padding: 30px 50px 30px 50px;
     }
     .publishment-icon img {
         height: 250px;

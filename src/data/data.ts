@@ -60,16 +60,12 @@ export const members = [
         },
         works: [
             {
-                webp: "MajorWorks/tonto/tonto_work_e6.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_e6.jpg",
+                webp: "MajorWorks/rin/rin_work_hawk.webp",
+                jpeg: "MajorWorks/rin/rin_work_hawk.jpg",
             },
             {
-                webp: "MajorWorks/tonto/tonto_work_chayagai.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_chayagai.jpg",
-            },
-            {
-                webp: "MajorWorks/tonto/tonto_work_sea.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_sea.jpg",
+                webp: "MajorWorks/rin/rin_work_tourou.webp",
+                jpeg: "MajorWorks/rin/rin_work_tourou.jpg",
             },
         ],
         twitter_url: "https://twitter.com/SekiRinphoto",

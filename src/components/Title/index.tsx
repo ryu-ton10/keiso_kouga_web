@@ -15,7 +15,9 @@ function Title() {
         // 画像のPreloadを実行
         const img = new Image();
         img.src = bgImage;
-        resolve("completed to load image");
+        img.onload = () => {
+            resolve("completed to load");
+        };
     })
 
     useEffect(() => {

@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Spin } from 'antd';
 import './index.css';
+import bgImage from './../../assets/title_chayagai.jpg';
 
-const Title: React.FC = () => {
+
+function Title() {
+
+    const [isLoading, setIsLoading] = useState(true);
+    const style = {
+        backgroundImage: `url(${bgImage})`
+    }
+
+    let fetchImage = new Promise((resolve, reject) => {
+        // 画像のPreloadを実行
+        const img = new Image();
+        img.src = bgImage;
+        resolve("completed to load image");
+    })
+
+    useEffect(() => {
+        // タイトルDOMの背景画像を事前にレンダリングする
+        fetchImage.then((successMessage) => {
+            setIsLoading(false);
+        })
+    });
+
     return (
-        <div className="title">
+        <>
+        {isLoading
+        ?
+        <div className="title-cover">
+            <Spin size="large" />
+        </div>
+        :
+        <div className="title" style={style}>
             <div className="title-rgba">
                 <div className="title-text">
                     <p className="title-main">珪素光画</p>
@@ -12,6 +42,8 @@ const Title: React.FC = () => {
                 </div>
             </div>
         </div>
+        }
+        </>
     );
 }
 

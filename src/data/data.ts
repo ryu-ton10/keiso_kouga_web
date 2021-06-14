@@ -67,10 +67,39 @@ export const members = [
                 webp: "MajorWorks/rin/rin_work_tourou.webp",
                 jpeg: "MajorWorks/rin/rin_work_tourou.jpg",
             },
+            {
+                webp: "MajorWorks/rin/rin_work_3.webp",
+                jpeg: "MajorWorks/rin/rin_work_3.jpg",
+            },
         ],
         twitter_url: "https://twitter.com/SekiRinphoto",
         keywords: ["天体", "夜景"],
         camera: "α7RⅡ / D5300"
+    },
+    {
+        id: nanoid(),
+        name: "千鈴",
+        icon: {
+            webp:"Icons/chirin_icon.webp",
+            jpeg:"Icons/chirin_icon.jpeg",
+        },
+        works: [
+            {
+                webp: "MajorWorks/chirin/chirin_work_1.webp",
+                jpeg: "MajorWorks/chirin/chirin_work_1.jpg",
+            },
+            {
+                webp: "MajorWorks/chirin/chirin_work_2.webp",
+                jpeg: "MajorWorks/chirin/chirin_work_2.jpg",
+            },
+            {
+                webp: "MajorWorks/chirin/chirin_work_3.webp",
+                jpeg: "MajorWorks/chirin/chirin_work_3.jpg",
+            },
+        ],
+        twitter_url: "https://twitter.com/ChirinPhoto",
+        keywords: ["天体", "夜景"],
+        camera: "α7RⅢ / D5500"
     },
 ]
 

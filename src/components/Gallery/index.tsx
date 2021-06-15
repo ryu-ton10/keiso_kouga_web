@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import { Row, Col, Image } from 'antd';
 
-const Gallery: React.FC = () => {
+function Gallery() {
 
     return (
         <div className="gallery">

@@ -29,7 +29,7 @@ type Props = {
 
 SwiperCore.use([Pagination, Autoplay]);
 
-const Members: React.FC<Props> = (props) => {
+function Members(props: Props) {
 
     const { members } = props;
 

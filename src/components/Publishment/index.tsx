@@ -19,7 +19,7 @@ type Props = {
     books: Book[];
 }
 
-const Publishment: React.FC<Props> = (props) => {
+function Publishment(props: Props) {
 
     const { books } = props;
 

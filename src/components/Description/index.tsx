@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 
-const Description: React.FC = () => {
+function Description() {
     return (
         <div className="description">
             <div className="description-title">

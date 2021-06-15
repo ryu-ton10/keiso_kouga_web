@@ -24,7 +24,7 @@ export const members = [
         ],
         twitter_url: "https://twitter.com/moonrabbitphoto/",
         keywords: ["夜空", "建造物"],
-        camera: "α7 III"
+        camera: "α7RⅢ "
     },
     {
         id: nanoid(),

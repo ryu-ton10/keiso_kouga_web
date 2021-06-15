@@ -1,0 +1,57 @@
+/* ===== ギャラリーコンテナ ===== */
+.gallery {
+    width: 100%;
+    position: relative;
+    padding: 0 30px 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10em;
+}
+
+.gallery .ant-col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+/* ===== ギャラリー写真 ===== */
+.gallery .ant-image-img {
+    padding: 5px 5px 5px 5px;
+}
+
+/* ===== レスポンスデザインに対応するためのメディアクエリ ===== */
+@media (min-width: 576px) {
+    .gallery {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        max-width: 720px;
+    }
+
+    .gallery .ant-image-img {
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 960px) {
+    .gallery {
+        max-width: 960px;
+    }
+    .gallery .ant-image-img {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery {
+        max-width: 1140px;
+    }
+    .gallery .ant-image-img {
+        max-width: 500px;
+    }
+}
+

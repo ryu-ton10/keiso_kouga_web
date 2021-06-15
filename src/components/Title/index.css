@@ -1,0 +1,143 @@
+/* ========= ヘッダータイトル =========== */
+.title-cover {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title-rgba {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title-text {
+    height: 100%;
+    text-align: center;
+    animation-name: fade-in;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-text p {
+    margin-bottom: 0;
+}
+
+.title-main {
+    font-family: 'Hiragino Mincho Pro';
+    color: white;
+}
+
+.title-sub {
+    font-family: 'Hiragino Mincho Pro';
+    font-size: 18pt;
+    color: white;
+    padding: 20px 0 0 0;
+}
+
+/* ========= テキストのレスポンスデザイン =========== */
+@media (min-width: 280px) {
+    .title-main {
+        font-size: 36pt;
+        padding: 0 0 10px 0;
+    }
+    .title-sub {
+        font-size: 10pt;
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .title-main {
+        font-size: 40pt;
+        padding: 0 0 10px 0;
+    }
+    .title-sub {
+        font-size: 12pt;
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .title-main {
+        font-size: 48pt;
+        padding: 0 0 10px 0;
+    }
+    .title-sub {
+        font-size: 14pt;
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title-main {
+        font-size: 50pt;
+        padding: 0 0 10px 0;
+    }
+    .title-sub {
+        font-size: 16pt;
+        padding: 10px 0 0 0;
+    }
+}
+
+/* ロード完了時の文字のフェードインアニメーション */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* スクロールを促すアイコン */
+.scroll {
+    padding-top: 50px;
+    color: white;
+}
+
+.scroll span {
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -30px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(-45deg);
+    animation: go-scroll 2s infinite;
+    box-sizing: border-box;
+}
+
+/* 矢印を下に動かすアニメーション */
+@keyframes go-scroll {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+

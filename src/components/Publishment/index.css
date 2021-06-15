@@ -1,0 +1,201 @@
+/* ========= 出版物 =========== */
+.publishment {
+    background-color: rgba(43,75,123, 1);
+}
+
+/* ========= 出版物の見出し =========== */
+.publishment-title {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.publishment-title-jp {
+    text-align: center;
+    font-family: 'Hiragino Mincho Pro';
+    color: white;
+    margin-bottom: 0;
+}
+
+.publishment-title-en {
+    text-align: center;
+    font-family: 'Hiragino Mincho Pro';
+    color: white;
+    margin-bottom: 0;
+}
+
+/* ========= 見出しのレスポンスデザイン =========== */
+@media (min-width: 280px) {
+    .publishment-title {
+        height: 100px;
+    }
+    .publishment-title-jp {
+        font-size: 24pt;
+    }
+    .publishment-title-en {
+        font-size: 9pt;
+    }
+
+}
+
+@media (min-width: 360px) {
+    .publishment-title {
+        height: 120px;
+    }
+    .publishment-title-jp {
+        font-size: 28pt;
+    }
+    .publishment-title-en {
+        font-size: 11pt;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .publishment-title {
+        height: 150px;
+    }
+    .publishment-title-jp {
+        font-size: 36pt;
+    }
+    .publishment-title-en {
+        font-size: 14pt;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .publishment-title {
+        height: 180px;
+    }
+    .publishment-title-jp {
+        font-size: 40pt;
+    }
+    .publishment-title-en {
+        font-size: 16pt;
+    }
+
+}
+
+/* ========= 同人誌詳細コンテナ =========== */
+.publishment-icon {
+    text-align: center;
+}
+
+.publishment-descriptions {
+    text-align: left;
+    position: relative;
+    justify-content: center;
+}
+
+.publishment-descriptions p {
+    margin-bottom: 0;
+}
+
+.publishment-name {
+    font-family: 'Hiragino Mincho Pro';
+    color: white;
+    padding: 20px 0 20px 0;
+}
+
+.publishment-detail {
+    font-family: 'Hiragino Mincho Pro';
+    color: white;
+}
+
+/* ========= 同人誌詳細レスポンスクエリ =========== */
+@media (min-width: 280px) {
+    .publishment-cell {
+        padding: 50px 30px 50px 30px;
+    }
+    .publishment-icon img {
+        height: 300px;
+        width: auto;
+    }
+    .publishment-name {
+        font-size: 18pt;
+    }
+    .publishment-detail {
+        font-size: 9pt;
+    }
+    .publishment-descriptions img {
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .publishment-cell {
+        padding: 30px 50px 30px 50px;
+    }
+    .publishment-icon img {
+        height: 250px;
+        width: auto;
+    }
+    .publishment-name {
+        font-size: 24pt;
+    }
+    .publishment-detail {
+        font-size: 9pt;
+    }
+    .publishment-descriptions img {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .publishment-cell {
+        padding: 80px 80px 80px 80px;
+    }
+    .publishment-icon img {
+        height: 380px;
+        width: auto;
+    }
+    .publishment-name {
+        font-size: 28pt;
+    }
+    .publishment-detail {
+        font-size: 12pt;
+    }
+    .publishment-descriptions img {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 960px) {
+    .publishment-cell {
+        padding: 80px 100px 80px 100px;
+    }
+    .publishment-icon img {
+        height: 380px;
+        width: auto;
+    }
+    .publishment-name {
+        font-size: 30pt;
+    }
+    .publishment-detail {
+        font-size: 14pt;
+    }
+    .publishment-descriptions img {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 1500px) {
+    .publishment-cell {
+        padding: 80px 100px 80px 100px;
+    }
+    .publishment-icon img {
+        height: 400px;
+        width: auto;
+    }
+    .publishment-name {
+        font-size: 36pt;
+    }
+    .publishment-detail {
+        font-size: 16pt;
+    }
+    .publishment-descriptions img {
+        padding: 20px 0 0 0;
+    }
+}

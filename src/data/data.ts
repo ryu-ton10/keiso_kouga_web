@@ -60,12 +60,12 @@ export const members = [
         },
         works: [
             {
-                webp: "MajorWorks/rin/rin_work_hawk.webp",
-                jpeg: "MajorWorks/rin/rin_work_hawk.jpeg",
+                webp: "MajorWorks/rin/rin_work_1.webp",
+                jpeg: "MajorWorks/rin/rin_work_1.jpeg",
             },
             {
-                webp: "MajorWorks/rin/rin_work_tourou.webp",
-                jpeg: "MajorWorks/rin/rin_work_tourou.jpeg",
+                webp: "MajorWorks/rin/rin_work_2.webp",
+                jpeg: "MajorWorks/rin/rin_work_2.jpeg",
             },
             {
                 webp: "MajorWorks/rin/rin_work_3.webp",

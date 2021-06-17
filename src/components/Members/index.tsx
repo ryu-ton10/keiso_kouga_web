@@ -8,7 +8,14 @@ import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
 import "swiper/swiper.min.css";
 import 'swiper/components/pagination/pagination.scss';
 
-type Member_Image = {
+type Member_Work = {
+    webp: string;
+    jpeg: string;
+    pre_webp: string;
+    pre_jpeg: string;
+}
+
+type Member_Icon = {
     webp: string;
     jpeg: string;
 }
@@ -16,8 +23,8 @@ type Member_Image = {
 type Member = {
     id: string;
     name: string;
-    icon: Member_Image;
-    works: Member_Image[];
+    icon: Member_Icon;
+    works: Member_Work[];
     twitter_url: string;
     keywords: string[];
     camera: string;
@@ -44,7 +51,7 @@ function Members(props: Props) {
                     const { name, icon, works, twitter_url, camera } = member;
                     return (
                         <Row>
-                            <Col xs={24} sm={12} md={10} lg={10} className="member-profile-left">
+                            <Col xs={24} sm={8} md={8} lg={8} className="member-profile-left">
                                 <picture>
                                     <source type="image/webp" srcSet={process.env.PUBLIC_URL + icon.webp}></source>
                                     <img src={process.env.PUBLIC_URL + icon.jpeg} alt="icon" />
@@ -55,7 +62,7 @@ function Members(props: Props) {
                                 </Row>
                                 <p>使用機材: {camera}</p>
                             </Col>
-                            <Col xs={24} sm={12} md={14} lg={14} className="member-profile-right">
+                            <Col xs={24} sm={16} md={16} lg={16} className="member-profile-right">
                                 <Swiper
                                     autoplay={{delay: 2000}}
                                     pagination={{ clickable: true }}
@@ -64,8 +71,11 @@ function Members(props: Props) {
                                         return (
                                             <SwiperSlide>
                                                 <Image
-                                                    src={process.env.PUBLIC_URL + work.webp}
-                                                    fallback={process.env.PUBLIC_URL + work.jpeg}
+                                                    src={process.env.PUBLIC_URL + work.pre_webp}
+                                                    fallback={process.env.PUBLIC_URL + work.pre_jpeg}
+                                                    preview={{
+                                                        src: `${process.env.PUBLIC_URL + work.webp}`,
+                                                    }}
                                                 />
                                             </SwiperSlide>
                                         );

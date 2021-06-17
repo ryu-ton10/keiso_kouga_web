@@ -35,8 +35,8 @@ export const members = [
         },
         works: [
             {
-                webp: "MajorWorks/tonto/tonto_work_e6.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_e6.jpg",
+                webp: "MajorWorks/tonto/tonto_work_1.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_1.jpg",
             },
             {
                 webp: "MajorWorks/tonto/tonto_work_2.webp",

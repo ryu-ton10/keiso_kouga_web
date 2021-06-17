@@ -8,7 +8,14 @@ import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
 import "swiper/swiper.min.css";
 import 'swiper/components/pagination/pagination.scss';
 
-type Member_Image = {
+type Member_Work = {
+    webp: string;
+    jpeg: string;
+    pre_webp: string;
+    pre_jpeg: string;
+}
+
+type Member_Icon = {
     webp: string;
     jpeg: string;
 }
@@ -16,8 +23,8 @@ type Member_Image = {
 type Member = {
     id: string;
     name: string;
-    icon: Member_Image;
-    works: Member_Image[];
+    icon: Member_Icon;
+    works: Member_Work[];
     twitter_url: string;
     keywords: string[];
     camera: string;
@@ -64,8 +71,11 @@ function Members(props: Props) {
                                         return (
                                             <SwiperSlide>
                                                 <Image
-                                                    src={process.env.PUBLIC_URL + work.webp}
-                                                    fallback={process.env.PUBLIC_URL + work.jpeg}
+                                                    src={process.env.PUBLIC_URL + work.pre_webp}
+                                                    fallback={process.env.PUBLIC_URL + work.pre_jpeg}
+                                                    preview={{
+                                                        src: `${process.env.PUBLIC_URL + work.webp}`,
+                                                    }}
                                                 />
                                             </SwiperSlide>
                                         );

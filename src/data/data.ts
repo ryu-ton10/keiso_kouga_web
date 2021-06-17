@@ -12,14 +12,20 @@ export const members = [
             {
                 webp: "MajorWorks/tuki/tuki_work_sasebo.webp",
                 jpeg: "MajorWorks/tuki/tuki_work_sasebo.jpeg",
+                pre_webp: "MajorWorks/tuki/tuki_work_sasebo_prev.webp",
+                pre_jpeg: "MajorWorks/tuki/tuki_work_sasebo_prev.jpeg",
             },
             {
                 webp: "MajorWorks/tuki/tuki_work_seaside.webp",
                 jpeg: "MajorWorks/tuki/tuki_work_seaside.jpeg",
+                pre_webp: "MajorWorks/tuki/tuki_work_seaside_prev.webp",
+                pre_jpeg: "MajorWorks/tuki/tuki_work_seaside_prev.jpeg",
             },
             {
                 webp: "MajorWorks/tuki/tuki_work_watchahead.webp",
                 jpeg: "MajorWorks/tuki/tuki_work_watchahead.jpeg",
+                pre_webp: "MajorWorks/tuki/tuki_work_watchahead_prev.webp",
+                pre_jpeg: "MajorWorks/tuki/tuki_work_watchahead_prev.jpeg",
             },
         ],
         twitter_url: "https://twitter.com/moonrabbitphoto/",
@@ -37,14 +43,20 @@ export const members = [
             {
                 webp: "MajorWorks/tonto/tonto_work_1.webp",
                 jpeg: "MajorWorks/tonto/tonto_work_1.jpg",
+                pre_webp: "MajorWorks/tonto/tonto_work_1_prev.webp",
+                pre_jpeg: "MajorWorks/tonto/tonto_work_1_prev.jpg",
             },
             {
                 webp: "MajorWorks/tonto/tonto_work_2.webp",
                 jpeg: "MajorWorks/tonto/tonto_work_2.JPG",
+                pre_webp: "MajorWorks/tonto/tonto_work_2_prev.webp",
+                pre_jpeg: "MajorWorks/tonto/tonto_work_2_prev.JPG",
             },
             {
                 webp: "MajorWorks/tonto/tonto_work_3.webp",
                 jpeg: "MajorWorks/tonto/tonto_work_3.JPG",
+                pre_webp: "MajorWorks/tonto/tonto_work_3_prev.webp",
+                pre_jpeg: "MajorWorks/tonto/tonto_work_3_prev.JPG",
             },
         ],
         twitter_url: "https://twitter.com/tsu7ma4_10nto/",
@@ -62,14 +74,20 @@ export const members = [
             {
                 webp: "MajorWorks/rin/rin_work_1.webp",
                 jpeg: "MajorWorks/rin/rin_work_1.jpeg",
+                pre_webp: "MajorWorks/rin/rin_work_1_prev.webp",
+                pre_jpeg: "MajorWorks/rin/rin_work_1_prev.jpeg",
             },
             {
                 webp: "MajorWorks/rin/rin_work_2.webp",
                 jpeg: "MajorWorks/rin/rin_work_2.jpeg",
+                pre_webp: "MajorWorks/rin/rin_work_2_prev.webp",
+                pre_jpeg: "MajorWorks/rin/rin_work_2_prev.jpeg",
             },
             {
                 webp: "MajorWorks/rin/rin_work_3.webp",
                 jpeg: "MajorWorks/rin/rin_work_3.jpeg",
+                pre_webp: "MajorWorks/rin/rin_work_3_prev.webp",
+                pre_jpeg: "MajorWorks/rin/rin_work_3_prev.jpeg",
             },
         ],
         twitter_url: "https://twitter.com/SekiRinphoto",
@@ -87,14 +105,20 @@ export const members = [
             {
                 webp: "MajorWorks/chirin/chirin_work_1.webp",
                 jpeg: "MajorWorks/chirin/chirin_work_1.jpeg",
+                pre_webp: "MajorWorks/chirin/chirin_work_1_prev.webp",
+                pre_jpeg: "MajorWorks/chirin/chirin_work_1_prev.jpeg",
             },
             {
                 webp: "MajorWorks/chirin/chirin_work_2.webp",
                 jpeg: "MajorWorks/chirin/chirin_work_2.jpeg",
+                pre_webp: "MajorWorks/chirin/chirin_work_2_prev.webp",
+                pre_jpeg: "MajorWorks/chirin/chirin_work_2_prev.jpeg",
             },
             {
                 webp: "MajorWorks/chirin/chirin_work_3.webp",
                 jpeg: "MajorWorks/chirin/chirin_work_3.jpeg",
+                pre_webp: "MajorWorks/chirin/chirin_work_3_prev.webp",
+                pre_jpeg: "MajorWorks/chirin/chirin_work_3_prev.jpeg",
             },
         ],
         twitter_url: "https://twitter.com/ChirinPhoto",

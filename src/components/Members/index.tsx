@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Row, Col, Image } from 'antd';
+import { Row, Col, Image, Spin } from 'antd';
 import { TwitterOutlined } from '@ant-design/icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
@@ -76,6 +76,9 @@ function Members(props: Props) {
                                                     preview={{
                                                         src: `${process.env.PUBLIC_URL + work.webp}`,
                                                     }}
+                                                    placeholder={
+                                                        <Spin size="large" />
+                                                    }
                                                 />
                                             </SwiperSlide>
                                         );

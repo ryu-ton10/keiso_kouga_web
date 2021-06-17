@@ -61,15 +61,15 @@ export const members = [
         works: [
             {
                 webp: "MajorWorks/rin/rin_work_hawk.webp",
-                jpeg: "MajorWorks/rin/rin_work_hawk.jpg",
+                jpeg: "MajorWorks/rin/rin_work_hawk.jpeg",
             },
             {
                 webp: "MajorWorks/rin/rin_work_tourou.webp",
-                jpeg: "MajorWorks/rin/rin_work_tourou.jpg",
+                jpeg: "MajorWorks/rin/rin_work_tourou.jpeg",
             },
             {
                 webp: "MajorWorks/rin/rin_work_3.webp",
-                jpeg: "MajorWorks/rin/rin_work_3.jpg",
+                jpeg: "MajorWorks/rin/rin_work_3.jpeg",
             },
         ],
         twitter_url: "https://twitter.com/SekiRinphoto",
@@ -86,15 +86,15 @@ export const members = [
         works: [
             {
                 webp: "MajorWorks/chirin/chirin_work_1.webp",
-                jpeg: "MajorWorks/chirin/chirin_work_1.jpg",
+                jpeg: "MajorWorks/chirin/chirin_work_1.jpeg",
             },
             {
                 webp: "MajorWorks/chirin/chirin_work_2.webp",
-                jpeg: "MajorWorks/chirin/chirin_work_2.jpg",
+                jpeg: "MajorWorks/chirin/chirin_work_2.jpeg",
             },
             {
                 webp: "MajorWorks/chirin/chirin_work_3.webp",
-                jpeg: "MajorWorks/chirin/chirin_work_3.jpg",
+                jpeg: "MajorWorks/chirin/chirin_work_3.jpeg",
             },
         ],
         twitter_url: "https://twitter.com/ChirinPhoto",

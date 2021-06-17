@@ -51,7 +51,7 @@ function Members(props: Props) {
                     const { name, icon, works, twitter_url, camera } = member;
                     return (
                         <Row>
-                            <Col xs={24} sm={12} md={10} lg={10} className="member-profile-left">
+                            <Col xs={24} sm={8} md={8} lg={8} className="member-profile-left">
                                 <picture>
                                     <source type="image/webp" srcSet={process.env.PUBLIC_URL + icon.webp}></source>
                                     <img src={process.env.PUBLIC_URL + icon.jpeg} alt="icon" />
@@ -62,7 +62,7 @@ function Members(props: Props) {
                                 </Row>
                                 <p>使用機材: {camera}</p>
                             </Col>
-                            <Col xs={24} sm={12} md={14} lg={14} className="member-profile-right">
+                            <Col xs={24} sm={16} md={16} lg={16} className="member-profile-right">
                                 <Swiper
                                     autoplay={{delay: 2000}}
                                     pagination={{ clickable: true }}

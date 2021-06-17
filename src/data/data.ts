@@ -39,12 +39,12 @@ export const members = [
                 jpeg: "MajorWorks/tonto/tonto_work_e6.jpg",
             },
             {
-                webp: "MajorWorks/tonto/tonto_work_chayagai.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_chayagai.jpg",
+                webp: "MajorWorks/tonto/tonto_work_2.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_2.JPG",
             },
             {
-                webp: "MajorWorks/tonto/tonto_work_sea.webp",
-                jpeg: "MajorWorks/tonto/tonto_work_sea.jpg",
+                webp: "MajorWorks/tonto/tonto_work_3.webp",
+                jpeg: "MajorWorks/tonto/tonto_work_3.JPG",
             },
         ],
         twitter_url: "https://twitter.com/tsu7ma4_10nto/",

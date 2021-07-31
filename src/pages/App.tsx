@@ -12,7 +12,6 @@ import { Layout } from 'antd';
 function App() {
   
   const { Footer } = Layout;
-  const date = new Date();
 
   return (
       <div className="main">
@@ -22,7 +21,7 @@ function App() {
         <Members members={members} />
         <Publishment books={books} />
         <Layout>
-          <Footer style={{ textAlign: 'center' }}>©︎ {date.getFullYear()} Ryusei Nomi</Footer>
+          <Footer style={{ textAlign: 'center' }}>©︎ 2021 Ryusei Nomi</Footer>
         </Layout>
       </div>
   );

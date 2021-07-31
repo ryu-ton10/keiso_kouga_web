@@ -38,7 +38,7 @@ function Title() {
         <div className="title" style={style}>
             <div className="title-rgba">
                 <div className="title-text">
-                    <p className="title-main">珪素光画</p>
+                    <h1 className="title-main">珪素光画</h1>
                     <p className="title-sub">日常を、写真で紡ぐ。</p>
                     <p className="scroll"><span></span></p>
                 </div>

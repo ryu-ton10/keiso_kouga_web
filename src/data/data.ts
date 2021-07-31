@@ -59,7 +59,7 @@ export const members = [
                 pre_jpeg: "MajorWorks/tonto/tonto_work_3_prev.JPG",
             },
         ],
-        twitter_url: "https://twitter.com/tsu7ma4_10nto/",
+        twitter_url: "https://twitter.com/27ma4_ton10/",
         keywords: ["列車", "神社仏閣"],
         camera: "D3100"
     },

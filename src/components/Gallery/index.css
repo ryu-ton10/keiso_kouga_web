@@ -15,6 +15,10 @@
     margin-top: 0;
 }
 
+.gallery .horizonal {
+  justify-content: space-between;
+}
+
 /* ===== ギャラリー写真 ===== */
 .gallery .ant-image-img {
     padding: 5px 5px 5px 5px;

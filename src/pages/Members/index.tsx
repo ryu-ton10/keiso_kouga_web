@@ -1,12 +1,6 @@
 import React from 'react';
 import './index.css';
-import { Row, Col, Image } from 'antd';
-import { TwitterOutlined } from '@ant-design/icons';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
-// Swiper styles
-import "swiper/swiper.min.css";
-import 'swiper/components/pagination/pagination.scss';
+import MemberCard from 'components/MemberCard';
 
 type Member_Work = {
     webp: string;
@@ -34,8 +28,6 @@ type Props = {
     members: Member[];
 }
 
-SwiperCore.use([Pagination, Autoplay]);
-
 function Members(props: Props) {
 
     const { members } = props;
@@ -50,39 +42,13 @@ function Members(props: Props) {
                 {members.map((member) => {
                     const { name, icon, works, twitter_url, camera } = member;
                     return (
-                        <Row>
-                            <Col xs={24} sm={8} md={8} lg={8} className="member-profile-left">
-                                <picture>
-                                    <source type="image/webp" srcSet={process.env.PUBLIC_URL + icon.webp}></source>
-                                    <img src={process.env.PUBLIC_URL + icon.jpeg} alt="icon" />
-                                </picture>
-                                <Row className="names">
-                                    <p className="name">{name}</p>
-                                    <a href={twitter_url} rel="noopener noreferrer" target="_blank"><TwitterOutlined /></a>
-                                </Row>
-                                <p>使用機材: {camera}</p>
-                            </Col>
-                            <Col xs={24} sm={16} md={16} lg={16} className="member-profile-right">
-                                <Swiper
-                                    autoplay={{delay: 2000}}
-                                    pagination={{ clickable: true }}
-                                >
-                                    {works.map((work) => {
-                                        return (
-                                            <SwiperSlide>
-                                                <Image
-                                                    src={process.env.PUBLIC_URL + work.pre_webp}
-                                                    fallback={process.env.PUBLIC_URL + work.pre_jpeg}
-                                                    preview={{
-                                                        src: `${process.env.PUBLIC_URL + work.webp}`,
-                                                    }}
-                                                />
-                                            </SwiperSlide>
-                                        );
-                                    })}
-                                </Swiper>
-                            </Col>
-                        </Row>
+                      <MemberCard
+                        name={name}
+                        icon={icon}
+                        works={works}
+                        twitter_url={twitter_url}
+                        camera={camera}
+                      />
                     );
                 })}
             </div>

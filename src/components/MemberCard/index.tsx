@@ -7,23 +7,12 @@ import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
 // Swiper styles
 import "swiper/swiper.min.css";
 import 'swiper/components/pagination/pagination.scss';
-
-type Member_Work = {
-  webp: string;
-  jpeg: string;
-  pre_webp: string;
-  pre_jpeg: string;
-}
-
-type Member_Icon = {
-  webp: string;
-  jpeg: string;
-}
+import { MemberWork, MemberIcon } from 'keisoKougaWebData';
 
 type Props = {
   name: string;
-  icon: Member_Icon;
-  works: Member_Work[];
+  icon: MemberIcon;
+  works: MemberWork[];
   twitter_url: string;
   camera: string;
 }

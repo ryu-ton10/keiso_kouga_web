@@ -1,92 +1,92 @@
 /* ========= main =========== */
 .member {
-    position: relative;
-    background-color: rgba(116, 139, 177, 1);
+  position: relative;
+  background-color: rgba(116, 139, 177, 1);
 }
 
 /* ========= 見出しセクション =========== */
 .member-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .member-title-jp {
-    text-align: center;
-    font-family: 'Hiragino Mincho Pro';
-    color: white;
-    margin-bottom: 0;
+  text-align: center;
+  font-family: 'Hiragino Mincho Pro';
+  color: white;
+  margin-bottom: 0;
 }
 
 .member-title-en {
-    text-align: left;
-    font-family: 'Hiragino Mincho Pro';
-    color: white;
-    margin-bottom: 0;
+  text-align: left;
+  font-family: 'Hiragino Mincho Pro';
+  color: white;
+  margin-bottom: 0;
 }
 
 /* ========= 見出しのレスポンスデザイン =========== */
 @media (min-width: 280px) {
-    .member-title {
-        height: 100px;
-    }
-    .member-title-jp {
-        font-size: 24pt;
-    }
-    .member-title-en {
-        font-size: 9pt;
-    }
+  .member-title {
+    height: 100px;
+  }
+  .member-title-jp {
+    font-size: 24pt;
+  }
+  .member-title-en {
+    font-size: 9pt;
+  }
 }
 
 @media (min-width: 360px) {
-    .member-title {
-        height: 120px;
-    }
-    .member-title-jp {
-        font-size: 28pt;
-    }
-    .member-title-en {
-        font-size: 11pt;
-    }
+  .member-title {
+    height: 120px;
+  }
+  .member-title-jp {
+    font-size: 28pt;
+  }
+  .member-title-en {
+    font-size: 11pt;
+  }
 }
 
 @media (min-width: 576px) {
-    .member-title {
-        height: 150px;
-    }
-    .member-title-jp {
-        font-size: 36pt;
-    }
-    .member-title-en {
-        font-size: 14pt;
-    }
+  .member-title {
+    height: 150px;
+  }
+  .member-title-jp {
+    font-size: 36pt;
+  }
+  .member-title-en {
+    font-size: 14pt;
+  }
 }
 
 @media (min-width: 960px) {
-    .member-cell {
-        margin: 0 50px 0 50px;
-    }
-    .member-title {
-        height: 180px;
-    }
-    .member-title-jp {
-        font-size: 40pt;
-    }
-    .member-title-en {
-        font-size: 16pt;
-    }
+  .member-cell {
+    margin: 0 50px 0 50px;
+  }
+  .member-title {
+    height: 180px;
+  }
+  .member-title-jp {
+    font-size: 40pt;
+  }
+  .member-title-en {
+    font-size: 16pt;
+  }
 }
 
 @media (min-width: 1200px) {
-    .member-cell {
-        margin: 0 120px 0 120px;
-    }
-}
-/* ========= メンバー一覧 =========== */
-.member-cell {
-    text-align: center;
-    flex-direction: column;
-    padding: 10px 10px 10px 10px;
+  .member-cell {
+    margin: 0 120px 0 120px;
+  }
 }
 
+/* ========= メンバー一覧 =========== */
+.member-cell {
+  text-align: center;
+  flex-direction: column;
+  padding: 10px 10px 10px 10px;
+}

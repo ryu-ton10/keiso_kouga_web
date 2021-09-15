@@ -15,16 +15,16 @@ function App() {
   const date = new Date();
 
   return (
-      <div className="main">
-          <Title />
-          <Description />
-          <Gallery />
-          <Members members={members} />
-          <Publishment books={books} />
-          <Layout>
-              <Footer style={{ textAlign: 'center' }}>©︎ {date.getFullYear()} Ryusei Nomi</Footer>
-          </Layout>
-      </div>
+    <div className="main">
+      <Title />
+      <Description />
+      <Gallery />
+      <Members members={members} />
+      <Publishment books={books} />
+      <Layout>
+        <Footer style={{ textAlign: 'center' }}>©︎ {date.getFullYear()} Ryusei Nomi</Footer>
+      </Layout>
+    </div>
   );
 }
 

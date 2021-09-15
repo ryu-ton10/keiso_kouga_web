@@ -1,28 +1,7 @@
 import React from 'react';
 import './index.css';
 import MemberCard from 'components/MemberCard';
-
-type Member_Work = {
-  webp: string;
-  jpeg: string;
-  pre_webp: string;
-  pre_jpeg: string;
-}
-
-type Member_Icon = {
-  webp: string;
-  jpeg: string;
-}
-
-type Member = {
-  id: string;
-  name: string;
-  icon: Member_Icon;
-  works: Member_Work[];
-  twitter_url: string;
-  keywords: string[];
-  camera: string;
-}
+import { Member } from 'keisoKougaWebData';
 
 type Props = {
   members: Member[];

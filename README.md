@@ -1,3 +1,7 @@
+# keiso_kouga_web
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/910d3297-df4a-4148-a656-bc28f0d265a5/deploy-status)](https://app.netlify.com/sites/keiso-kouga/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -30,6 +30,38 @@ $ npm install -g yarn
 master ---> develop
 ```
 
+## ディレクトリ構成
+
+```
+.
+├── README.md
+├── package.json
+├── public => indexファイルや写真データなど
+│   ├── Gallery
+│   ├── Icons
+│   ├── MajorWorks
+│   ├── Publishments
+│   ├── assocbutt_or_detail.png
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── @types
+│   ├── assets
+│   ├── components => 各pageで再利用されるDOMを格納
+│   ├── data
+│   ├── index.css
+│   ├── index.tsx
+│   ├── pages => SPAだが各セクションをpageとして分割している
+│   ├── react-app-env.d.ts
+│   ├── reportWebVitals.ts
+│   └── setupTests.ts
+├── tsconfig.json
+└── yarn.lock
+```
+
 ## デプロイ方法
 
 デプロイ先は [netlify](https://www.netlify.com/) を採用している。

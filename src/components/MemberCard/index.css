@@ -108,8 +108,8 @@
 @media (min-width: 1500px) {
   .member-profile-left img {
     padding: 20px 0 20px 0;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 250px;
+    max-height: 250px;
   }
   .member-profile-left .name {
     font-size: 36pt;

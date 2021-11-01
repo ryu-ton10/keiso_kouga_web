@@ -182,7 +182,7 @@
     padding: 80px 100px 80px 100px;
   }
   .publishment-icon img {
-    height: 400px;
+    height: 500px;
     width: auto;
   }
   .publishment-name {
@@ -190,6 +190,7 @@
   }
   .publishment-detail {
     font-size: 16pt;
+    margin-right: 100px;
   }
   .publishment-descriptions img {
     padding: 20px 0 0 0;

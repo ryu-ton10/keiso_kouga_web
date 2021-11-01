@@ -27,7 +27,7 @@ $ npm install -g yarn
 ## ブランチ戦略
 
 ```
-master ---> develop
+master <--- develop
 ```
 
 ## ディレクトリ構成
@@ -65,6 +65,11 @@ master ---> develop
 ## デプロイ方法
 
 デプロイ先は [netlify](https://www.netlify.com/) を採用している。
-基本的に `develop` から `master` へのプルリクエストを Open した時点で netlify 上で preview サイトが閲覧出来るようになっている。そのため、本番への反映前に preview を見て問題が無いことを確認する。
+
+基本的に `develop` から `master` へのプルリクエストを Open した時点で netlify 上で preview サイトが閲覧出来るようになっている。
+
+そのため、本番への反映前に preview を見て問題が無いことを確認する。
+
 また、 `yarn build` などのデプロイコマンドは `master` への merge の時点で netlify 上で実行されるため
+
 利用者側は `master` へのプルリクエストを merge するだけで良い。

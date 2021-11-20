@@ -6,8 +6,8 @@ function Description() {
     <div className="description">
       <div className="logo">
         <picture>
-          <source type="image/webp" srcSet={process.env.PUBLIC_URL + 'keiso_logo.webp'}></source>
-          <img src={process.env.PUBLIC_URL + 'keiso_logo.png'} alt="icon" />
+          <source type="image/webp" srcSet={process.env.PUBLIC_URL + 'keiso_kouga_logo.webp'}></source>
+          <img src={process.env.PUBLIC_URL + 'keiso_kouga_logo.png'} alt="icon" />
         </picture>
       </div>
       <div className="description-title">

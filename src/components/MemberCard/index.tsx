@@ -10,6 +10,7 @@ import 'swiper/components/pagination/pagination.scss';
 import { MemberWork, MemberIcon } from 'keisoKougaWebData';
 
 type Props = {
+  key: number;
   name: string;
   icon: MemberIcon;
   works: MemberWork[];

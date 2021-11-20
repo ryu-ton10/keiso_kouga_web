@@ -18,10 +18,11 @@ function Members(props: Props) {
         <p className="member-title-en">Members</p>
       </div>
       <div className="member-cell">
-        {members.map((member) => {
+        {members.map((member, index) => {
           const { name, icon, works, twitter_url, camera } = member;
           return (
             <MemberCard
+              key={index}
               name={name}
               icon={icon}
               works={works}

@@ -1,3 +1,30 @@
+/* ========= サークルロゴ部分 =========== */
+.logo {
+  text-align: center;
+  opacity: 1;
+  margin: 100px 0 100px 0;
+}
+
+@media (min-width: 280px) {
+  .logo {
+    margin: 50px 0 50px 0;
+  }
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (min-width: 960px) {
+  .logo {
+    margin: 80px 0 80px 0;
+  }
+  .logo img {
+    width: 200px;
+    height: auto;
+  }
+}
+
 /* ========= サークル概要文 =========== */
 .description {
   position: relative;

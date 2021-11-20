@@ -4,6 +4,12 @@ import './index.css';
 function Description() {
   return (
     <div className="description">
+      <div className="logo">
+        <picture>
+          <source type="image/webp" srcSet={process.env.PUBLIC_URL + 'keiso_logo.webp'}></source>
+          <img src={process.env.PUBLIC_URL + 'keiso_logo.png'} alt="icon" />
+        </picture>
+      </div>
       <div className="description-title">
         <p>珪素光画の世界へ、ようこそ</p>
       </div>

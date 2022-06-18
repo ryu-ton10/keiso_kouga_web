@@ -141,3 +141,5 @@ export const books = [
         url: "https://www.amazon.co.jp/dp/B08RY6VBMP/ref=cm_sw_r_tw_awdb_c_x_GxP8FbQ43252P",
     },
 ]
+
+export const privacy_policy = "当サイトでは、データ収集のために Google アナリティクスを利用しています。このデータは匿名で収集されるものであり、個人を特定するものではありません。また、この機能は Cookie を無効にすることで収集を拒否することが出来ます。"

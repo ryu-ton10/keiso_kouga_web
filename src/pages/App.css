@@ -12,12 +12,12 @@
   padding-top: 20px;
 }
 
-.privacy_policy a {
+.privacy_policy p {
   margin-bottom: 0;
   color: #808080;
   border-bottom: solid 2px #808080;
 }
 
-.privacy_policy a:hover {
+.privacy_policy p:hover {
   color: #a9a9a9;
 }

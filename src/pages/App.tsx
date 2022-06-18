@@ -24,7 +24,7 @@ function App() {
       <Publishment books={books} />
       <Layout>
         <div className="privacy_policy">
-          <a onClick={ () => setIsShowModal(true) }>プライバシーポリシー</a>
+          <p onClick={ () => setIsShowModal(true) }>プライバシーポリシー</p>
         </div>
         {isShowModal &&
           <PrivacyPolicy scentence={privacy_policy} hook={setIsShowModal} />

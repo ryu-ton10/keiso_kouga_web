@@ -131,8 +131,8 @@
   justify-content: center;
 }
 
-.member-profile-right .swiper-container {
-  padding-bottom: 20px;
+.member-profile-right .rsis-container {
+  border: 7px solid white !important;
 }
 
 

@@ -1,13 +1,9 @@
 import React from 'react';
 import './index.css';
-import { Row, Col, Image } from 'antd';
+import { Row, Col } from 'antd';
 import { TwitterOutlined } from '@ant-design/icons';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination, Autoplay } from 'swiper/core';
-// Swiper styles
-import "swiper/swiper.min.css";
-import 'swiper/components/pagination/pagination.scss';
 import { MemberWork, MemberIcon } from 'keisoKougaWebData';
+import SimpleImageSlider from 'react-simple-image-slider';
 
 type Props = {
   key: number;
@@ -18,9 +14,9 @@ type Props = {
   camera: string;
 }
 
-SwiperCore.use([Pagination, Autoplay]);
-
 function MemberCard(props: Props) {
+
+  const { innerWidth: width } = window;
 
   return (
     <div className="member-card">
@@ -37,24 +33,14 @@ function MemberCard(props: Props) {
           <p>使用機材: {props.camera}</p>
         </Col>
         <Col xs={24} sm={16} md={16} lg={16} className="member-profile-right">
-          <Swiper
-            autoplay={{delay: 2000}}
-            pagination={{ clickable: true }}
-          >
-            {props.works.map((work) => {
-              return (
-                <SwiperSlide>
-                  <Image
-                    src={process.env.PUBLIC_URL + work.pre_webp}
-                    fallback={process.env.PUBLIC_URL + work.pre_jpeg}
-                    preview={{
-                      src: `${process.env.PUBLIC_URL + work.webp}`,
-                    }}
-                  />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
+          <SimpleImageSlider
+            width={width < 576 ? width*0.8 : width*0.55}
+            height={width < 576 ? (width*0.8)*0.66 : (width*0.55)*0.66}
+            images={props.works}
+            showBullets={false}
+            showNavs={false}
+            autoPlay={true}
+          />
         </Col>
       </Row>
     </div>

@@ -2,10 +2,8 @@ declare module "keisoKougaWebData" {
 
   /* メンバーの作例写真の型定義 */
   export type MemberWork = {
-    webp: string;
-    jpeg: string;
-    pre_webp: string;
-    pre_jpeg: string;
+    id: string;
+    url: string;
   }
   
   /* メンバーのサムネイル写真の型定義 */

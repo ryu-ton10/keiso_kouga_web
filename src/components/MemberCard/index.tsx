@@ -34,8 +34,8 @@ function MemberCard(props: Props) {
         </Col>
         <Col xs={24} sm={16} md={16} lg={16} className="member-profile-right">
           <SimpleImageSlider
-            width={width < 576 ? width*0.8 : width*0.55}
-            height={width < 576 ? (width*0.8)*0.66 : (width*0.55)*0.66}
+            width={getWidth(width)}
+            height={(getWidth(width))*0.66}
             images={props.works}
             showBullets={false}
             showNavs={false}
@@ -45,6 +45,21 @@ function MemberCard(props: Props) {
       </Row>
     </div>
   );
+}
+
+/**
+ * 作例写真の横幅の値を、現在の画面幅に応じて返却する
+ * @param [number] width
+ * @return [number]
+ */
+function getWidth(width: number) {
+  if(width < 576) {
+    return width*0.8;
+  } else if(width >= 576 && width < 960) {
+    return width*0.55;
+  } else {
+    return width*0.5;
+  }
 }
 
 export default MemberCard;

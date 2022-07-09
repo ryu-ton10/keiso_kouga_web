@@ -47,6 +47,7 @@ afterEach(() => {
   container = null;
 });
 
+/* ---------------- snapshot tests -------------------- */
 it("MemberCard コンポーネントが表示されること", () => {
   act(() => {
     render(
@@ -75,8 +76,8 @@ it("MemberCard コンポーネントが表示されること", () => {
           <p>使用機材: hoge_camera</p>
         </div>
         <div class=\\"ant-col member-profile-right ant-col-xs-24 ant-col-sm-16 ant-col-md-16 ant-col-lg-16\\">
-          <div style=\\"display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 563.2px; height: 371.71200000000005px; background-color: rgb(0, 0, 0);\\">
-            <div style=\\"display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 563.2px; height: 371.71200000000005px;\\">
+          <div style=\\"display: block; margin: 0px; padding: 0px; border: 0px; overflow: hidden; width: 512px; height: 337.92px; background-color: rgb(0, 0, 0);\\">
+            <div style=\\"display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; overflow: hidden; width: 512px; height: 337.92px;\\">
               <div style=\\"display: block; margin: 0px; padding: 0px; border: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;\\" class=\\"rsis-container\\">
                 <div style=\\"position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(pre_dummy_work_1.jpeg); transform: translate3d(0%, 0px, 0px);\\" class=\\"rsis-image\\"></div>
                 <div style=\\"position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; background-size: cover; overflow: hidden; transition: 0.5s; background-image: url(pre_dummy_work_2.jpeg); transform: translate3d(100%, 0px, 0px);\\"></div>

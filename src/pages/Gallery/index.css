@@ -6,16 +6,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10em;
+
+  display: grid;
 }
 
-.gallery .ant-col {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 0;
-}
-
-.gallery .horizonal {
+.gallery-right {
   justify-content: space-between;
 }
 
@@ -28,12 +23,14 @@
 @media (min-width: 576px) {
   .gallery {
     max-width: 540px;
+    grid-template-columns: 24fr;
   }
 }
 
 @media (min-width: 768px) {
   .gallery {
     max-width: 720px;
+    grid-template-columns: 12fr 12fr;
   }
 
   .gallery .ant-image-img {

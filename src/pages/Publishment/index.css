@@ -141,8 +141,15 @@
 
 @media (min-width: 768px) {
   .publishment-cell {
+    display: grid;
+    grid-template-columns: 10fr 14fr;
     padding: 80px 80px 80px 80px;
   }
+
+  .publishment-cell .publishment-descriptions {
+    padding-left: 20px;
+  }
+
   .publishment-icon img {
     height: 380px;
     width: auto;
@@ -163,7 +170,7 @@
     padding: 80px 100px 80px 100px;
   }
   .publishment-icon img {
-    height: 380px;
+    height: 500px;
     width: auto;
   }
   .publishment-name {

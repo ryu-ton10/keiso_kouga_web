@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`コンポーネントが描画されること 1`] = `
+<div
+  className="description"
+>
+  <div
+    className="logo"
+  >
+    <picture>
+      <source
+        srcSet="keiso_kouga_logo.webp"
+        type="image/webp"
+      />
+      <img
+        alt="icon"
+        src="keiso_kouga_logo.png"
+      />
+    </picture>
+  </div>
+  <div
+    className="description-title"
+  >
+    <p>
+      珪素光画の世界へ、ようこそ
+    </p>
+  </div>
+  <div
+    className="description-content"
+  >
+    <p>
+      写真サークル 珪素光画は、日本の風景を主に撮影しています。
+      <br />
+      荘厳な自然や身の回りの何気ない日常などを見ていると
+      <br />
+      新たな発見をすることが出来るかも知れません。
+      <br />
+      そんな体験を生むために、今日もカメラを構えます。
+    </p>
+  </div>
+</div>
+`;

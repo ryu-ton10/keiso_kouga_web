@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`コンポーネントが描画されること 1`] = `
+<div
+  className="overlay"
+>
+  <div
+    className="modal"
+  >
+    <p>
+      hogehoge
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      OK
+    </button>
+  </div>
+</div>
+`;

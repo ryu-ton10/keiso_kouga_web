@@ -10,22 +10,5 @@ it("コンポーネントが描画されること", () => {
     .create(<PrivacyPolicy scentence={dummyScentence} hook={dummyHook} />)
     .toJSON();
 
-  expect(tree).toMatchInlineSnapshot(`
-    <div
-      className="overlay"
-    >
-      <div
-        className="modal"
-      >
-        <p>
-          hogehoge
-        </p>
-        <button
-          onClick={[Function]}
-        >
-          OK
-        </button>
-      </div>
-    </div>
-  `);
+  expect(tree).toMatchSnapshot();
 });

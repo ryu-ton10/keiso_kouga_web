@@ -50,6 +50,7 @@ master <--- develop
 ├── src
 │   ├── @types
 │   ├── assets
+│   ├── __tests__ => テストコード群
 │   ├── components => 各pageで再利用されるDOMを格納
 │   ├── data
 │   ├── index.css

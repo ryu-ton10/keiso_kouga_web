@@ -15,7 +15,7 @@ function Footer(props: Props) {
   return (
     <div className="footer" data-testid="footer">
       <div className="privacy_policy">
-        <p onClick={ () => setIsShowModal(true) }>プライバシーポリシー</p>
+        <p data-test-id="privacy_policy_button" onClick={ () => setIsShowModal(true) }>プライバシーポリシー</p>
       </div>
       {isShowModal &&
         <PrivacyPolicy scentence={privacy_policy} hook={setIsShowModal} />

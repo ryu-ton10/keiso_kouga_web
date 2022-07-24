@@ -9,6 +9,7 @@ exports[`コンポーネントが描画されること 1`] = `
     className="privacy_policy"
   >
     <p
+      data-test-id="privacy_policy_button"
       onClick={[Function]}
     >
       プライバシーポリシー

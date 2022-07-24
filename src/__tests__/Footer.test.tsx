@@ -1,5 +1,6 @@
-import renderer, { act } from 'react-test-renderer';
+import renderer from 'react-test-renderer';
 import { createRoot } from 'react-dom/client';
+import { act } from 'react-dom/test-utils';
 import Footer from 'pages/Footer';
 
 let container = null;
@@ -7,13 +8,6 @@ let root = null;
 const dummy_privacy_policy = 'hogehoge';
 const dummy_twitter_url = 'fugafuga';
 
-beforeAll(() => {
- globalThis.IS_REACT_ACT_ENVIRONMENT = true;
-});
-
-afterAll(() => {
- globalThis.IS_REACT_ACT_ENVIRONMENT = false;
-});
 
 beforeEach(() => {
   container = document.createElement('div');
@@ -27,6 +21,7 @@ afterEach(() => {
   container = null;
 });
 
+/* ---------------- snapshot test -------------------- */
 it('コンポーネントが描画されること', () => {
   const component = renderer.create(
     <Footer
@@ -39,6 +34,7 @@ it('コンポーネントが描画されること', () => {
 })
 
 
+/* ---------------- act test -------------------- */
 it('ボタンをクリックするとプライバシーポリシーが表示されること', () => {
   act(() => {
     root.render(

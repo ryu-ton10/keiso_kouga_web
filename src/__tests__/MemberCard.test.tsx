@@ -1,22 +1,11 @@
 import React from "react";
-import { render } from "react-dom";
-import { createRoot } from 'react-dom/client';
+import { render, unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 import pretty from "pretty";
 
 import MemberCard from "./../components/MemberCard";
 
 let container = null;
-let root = null;
-
-beforeAll(() => {
- globalThis.IS_REACT_ACT_ENVIRONMENT = true;
-});
-
-afterAll(() => {
- globalThis.IS_REACT_ACT_ENVIRONMENT = false;
-});
-
 const mockMemberWork = [
   {
     url: "pre_dummy_work_1.jpeg",
@@ -34,7 +23,6 @@ beforeEach(() => {
   // container に div 要素を追加
   container = document.createElement("div");
   document.body.appendChild(container);
-  root = createRoot(container);
 
   // define mock
   Object.defineProperty(window, "matchMedia", {
@@ -54,7 +42,7 @@ beforeEach(() => {
 
 afterEach(() => {
   // 定義した container を null 状態にする
-  root.unmount(container);
+  unmountComponentAtNode(container);
   container.remove();
   container = null;
 });
@@ -62,7 +50,7 @@ afterEach(() => {
 /* ---------------- snapshot tests -------------------- */
 it("MemberCard コンポーネントが表示されること", () => {
   act(() => {
-    root.render(
+    render(
       <MemberCard
         key="0"
         name="test"

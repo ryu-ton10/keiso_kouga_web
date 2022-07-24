@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Title from 'pages/Title';
 import Description from 'pages/Description';
 import Gallery from 'pages/Gallery';
 import Members from 'pages/Members';
 import Publishment from 'pages/Publishment';
-import PrivacyPolicy from 'components/PrivacyPolicy';
+import Footer from 'pages/Footer';
 import './App.css';
 import 'antd/dist/antd.css';
-import { members, books, privacy_policy } from 'data/data';
-import { Layout } from 'antd';
+import { members, books, privacy_policy, twitter_url } from 'data/data';
 
 function App() {
-  
-  const { Footer } = Layout;
-  const [isShowModal, setIsShowModal] = useState(false);
-
   return (
     <div className="main">
       <Title />
@@ -22,15 +17,7 @@ function App() {
       <Gallery />
       <Members members={members} />
       <Publishment books={books} />
-      <Layout>
-        <div className="privacy_policy">
-          <p onClick={ () => setIsShowModal(true) }>プライバシーポリシー</p>
-        </div>
-        {isShowModal &&
-          <PrivacyPolicy scentence={privacy_policy} hook={setIsShowModal} />
-        }
-        <Footer style={{ textAlign: 'center' }}>©︎2021 <a href="https://twitter.com/27ma4_ton10" rel="noopener noreferrer" target="_blank">@27ma4_ton10</a></Footer>
-      </Layout>
+      <Footer privacy_policy={privacy_policy} twitter_url={twitter_url} />
     </div>
   );
 }

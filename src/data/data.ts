@@ -31,7 +31,7 @@ export const members = [
     name: "とんと",
     icon: {
       webp:"Icons/tonto_icon.webp",
-      jpeg:"Icons/tonto_icon.jpeg",
+      jpeg:"Icons/tonto_icon.jpg",
     },
     works: [
       {
@@ -47,7 +47,7 @@ export const members = [
         url: "MajorWorks/tonto/tonto_work_3_prev.JPG",
       },
     ],
-    twitter_url: "https://twitter.com/27ma4_ton10/",
+    twitter_url: "https://x.com/meitonto37",
     keywords: ["列車", "神社仏閣"],
     camera: "D3100"
   },

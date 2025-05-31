@@ -31,7 +31,7 @@ export const members = [
     name: "とんと",
     icon: {
       webp:"Icons/tonto_icon.webp",
-      jpeg:"Icons/tonto_icon.jpeg",
+      jpeg:"Icons/tonto_icon.jpg",
     },
     works: [
       {
@@ -47,7 +47,7 @@ export const members = [
         url: "MajorWorks/tonto/tonto_work_3_prev.JPG",
       },
     ],
-    twitter_url: "https://twitter.com/27ma4_ton10/",
+    twitter_url: "https://x.com/meitonto37",
     keywords: ["列車", "神社仏閣"],
     camera: "D3100"
   },
@@ -120,4 +120,4 @@ export const books = [
 
 export const privacy_policy = "当サイトでは、データ収集のために Google アナリティクスを利用しています。このデータは匿名で収集されるものであり、個人を特定するものではありません。また、この機能は Cookie を無効にすることで収集を拒否することが出来ます。"
 
-export const twitter_url = "https://twitter.com/27ma4_ton10"
+export const twitter_url = "https://x.com/meitonto37"

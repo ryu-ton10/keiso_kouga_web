@@ -19,7 +19,7 @@ exports[`コンポーネントが描画されること 1`] = `
     </p>
   </div>
   <div
-    className="publishment-cell"
+    className="publishment-table"
   >
     <div
       className="publishment-icon"

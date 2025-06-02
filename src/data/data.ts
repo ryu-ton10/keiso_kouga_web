@@ -56,15 +56,30 @@ export const members = [
 export const books = [
   {
     id: nanoid(),
-    title: "紬 -つむぎ-",
-    description: "珪素光画の第1作目として刊行された作品。日本各地の風景を撮影したものを集め、まるで1つの旅をしているかのように紡いだ１冊です。",
+    title: "TraveLog Vol.1 IKESHIMA",
+    description: "",
     image: {
-      webp: "Publishments/tsumugi.webp",
-      jpeg: "Publishments/tsumugi.jpeg",
-      pre_webp: "Publishments/tsumugi_prev.webp",
-      pre_jpeg: "Publishments/tsumugi_prev.jpeg",
+      webp: "Publishments/ikeshima.webp",
+      jpeg: "Publishments/ikeshima.jpg",
     },
-    url: "https://www.amazon.co.jp/dp/B08RY6VBMP/ref=cm_sw_r_tw_awdb_c_x_GxP8FbQ43252P",
+  },
+  {
+    id: nanoid(),
+    title: "TraveLog Vol.2 NIIGATA",
+    description: "",
+    image: {
+      webp: "Publishments/niigata.webp",
+      jpeg: "Publishments/niigata.jpg",
+    },
+  },
+  {
+    id: nanoid(),
+    title: "おんぼら〜っと 金沢",
+    description: "",
+    image: {
+      webp: "Publishments/kanazawa.webp",
+      jpeg: "Publishments/kanazawa.png",
+    },
   },
 ]
 

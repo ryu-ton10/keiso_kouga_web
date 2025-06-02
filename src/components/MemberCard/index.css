@@ -70,7 +70,7 @@
 @media (min-width: 768px) {
   .member-card {
     padding: 30px 0 30px 0;
-    grid-template-columns: 9fr 15fr;
+    grid-template-columns: 1fr 2fr;
   }
 
   .member-profile-left img {
@@ -93,7 +93,7 @@
 
 @media (min-width: 968px) {
   .member-card {
-    grid-template-columns: 8fr 16fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
@@ -133,17 +133,11 @@
   .member-profile-right {
     padding: 10px 0 50px 0;
   }
-  .member-profile-right .ant-image {
-    margin: 10px 0 10px 0;
-  }
 }
 
 @media (min-width: 360px) {
   .member-profile-right {
     padding: 10px 0 50px 0;
-  }
-  .member-profile-right .ant-image {
-    margin: 10px 0 10px 0;
   }
 }
 
@@ -152,20 +146,12 @@
     padding: 10px 0 10px 0;
     align-items: center;
   }
-  .member-profile-right .ant-image {
-    margin: 5px 0 5px 0;
-    width: 90%;
-  }
 }
 
 @media (min-width: 768px) {
   .member-profile-right {
     padding: 10px 0 10px 0;
     align-items: center;
-  }
-  .member-profile-right .ant-image {
-    margin: 5px 0 5px 0;
-    width: 80%;
   }
 }
 

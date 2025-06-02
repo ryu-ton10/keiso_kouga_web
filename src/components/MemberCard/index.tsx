@@ -50,11 +50,11 @@ function MemberCard(props: Props) {
 function getWidth(width: number) {
   if(width < 576) {
     return width*0.8;
-  } else if(width >= 576 && width < 960) {
-    return width*0.55;
-  } else {
-    return width*0.5;
   }
+  if(width >= 576 && width < 960) {
+    return width*0.55;
+  }
+  return width*0.4;
 }
 
 export default MemberCard;

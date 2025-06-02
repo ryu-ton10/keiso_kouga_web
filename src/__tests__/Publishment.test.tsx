@@ -9,10 +9,7 @@ const dummyBooks = [
     image: {
         webp: "sample.webp",
         jpeg: "sample.jpeg",
-        pre_webp: "sample.webp",
-        pre_jpeg: "sample.jpeg",
     },
-    url: "http://sample.com",
   },
 ];
 

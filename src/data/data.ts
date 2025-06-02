@@ -51,70 +51,35 @@ export const members = [
     keywords: ["列車", "神社仏閣"],
     camera: "D3100"
   },
-  {
-    id: nanoid(),
-    name: "燐",
-    icon: {
-      webp:"Icons/rin_icon.webp",
-      jpeg:"Icons/rin_icon.jpeg",
-    },
-    works: [
-      {
-        id: nanoid(),
-        url: "MajorWorks/rin/rin_work_1_prev.jpeg",
-      },
-      {
-        id: nanoid(),
-        url: "MajorWorks/rin/rin_work_2_prev.jpeg",
-      },
-      {
-        id: nanoid(),
-        url: "MajorWorks/rin/rin_work_3_prev.jpeg",
-      },
-    ],
-    twitter_url: "https://twitter.com/SekiRinphoto",
-    keywords: ["天体", "夜景"],
-    camera: "α7RⅡ / D5300"
-  },
-  {
-    id: nanoid(),
-    name: "千鈴",
-    icon: {
-      webp:"Icons/chirin_icon.webp",
-      jpeg:"Icons/chirin_icon.jpeg",
-    },
-    works: [
-      {
-        id: nanoid(),
-        url: "MajorWorks/chirin/chirin_work_1_prev.jpeg",
-      },
-      {
-        id: nanoid(),
-        url: "MajorWorks/chirin/chirin_work_2_prev.jpeg",
-      },
-      {
-        id: nanoid(),
-        url: "MajorWorks/chirin/chirin_work_3_prev.jpeg",
-      },
-    ],
-    twitter_url: "https://twitter.com/ChirinPhoto",
-    keywords: ["天体", "夜景"],
-    camera: "α7RⅢ / D5500"
-  },
 ]
 
 export const books = [
   {
     id: nanoid(),
-    title: "紬 -つむぎ-",
-    description: "珪素光画の第1作目として刊行された作品。日本各地の風景を撮影したものを集め、まるで1つの旅をしているかのように紡いだ１冊です。",
+    title: "TraveLog Vol.1 IKESHIMA",
+    description: "",
     image: {
-      webp: "Publishments/tsumugi.webp",
-      jpeg: "Publishments/tsumugi.jpeg",
-      pre_webp: "Publishments/tsumugi_prev.webp",
-      pre_jpeg: "Publishments/tsumugi_prev.jpeg",
+      webp: "Publishments/ikeshima.webp",
+      jpeg: "Publishments/ikeshima.jpg",
     },
-    url: "https://www.amazon.co.jp/dp/B08RY6VBMP/ref=cm_sw_r_tw_awdb_c_x_GxP8FbQ43252P",
+  },
+  {
+    id: nanoid(),
+    title: "TraveLog Vol.2 NIIGATA",
+    description: "",
+    image: {
+      webp: "Publishments/niigata.webp",
+      jpeg: "Publishments/niigata.jpg",
+    },
+  },
+  {
+    id: nanoid(),
+    title: "おんぼら〜っと 金沢",
+    description: "",
+    image: {
+      webp: "Publishments/kanazawa.webp",
+      jpeg: "Publishments/kanazawa.png",
+    },
   },
 ]
 

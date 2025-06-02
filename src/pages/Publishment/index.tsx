@@ -1,12 +1,9 @@
 import React from 'react';
 import './index.css';
-import { Image } from 'antd';
 
 type Publishment_Image = {
   webp: string;
   jpeg: string;
-  pre_webp: string;
-  pre_jpeg: string;
 }
 
 type Book = {
@@ -14,7 +11,6 @@ type Book = {
   title: string;
   description: string;
   image: Publishment_Image;
-  url: string;
 }
 
 type Props = {
@@ -31,26 +27,21 @@ function Publishment(props: Props) {
         <p className="publishment-title-jp">同人誌</p>
         <p className="publishment-title-en">Publishment</p>
       </div>
-      <div className="publishment-cell">
+      <div className="publishment-table">
         {books.map((book) => {
-          const { title, description, image, url } = book;
+          const { id, title, description, image } = book;
           return (
           <>
-            <div className="publishment-icon">
-              <Image
-                src={process.env.PUBLIC_URL + image.pre_webp}
-                fallback={process.env.PUBLIC_URL + image.pre_jpeg}
-                preview={{
-                  src: `${process.env.PUBLIC_URL + image.webp}`
-                }}
-              />
-            </div>
-            <div className="publishment-descriptions">
-              <p className="publishment-name">{title}</p>
-              <p className="publishment-detail">{description}</p>
-              <a href={url} rel="noopener noreferrer" target="_blank">
-                <img src={process.env.PUBLIC_URL + "assocbutt_or_detail.png"} alt="amazon icon"/>
-              </a>
+            <div className="publishment-cell" key={id}>
+              <picture>
+                <source srcSet={process.env.PUBLIC_URL + image.webp} type="image/webp" />
+                <img
+                  aria-label='publishment-image'
+                  src={process.env.PUBLIC_URL + image.jpeg}
+                />
+              </picture>
+              <h1>{ title }</h1>
+              <p>{ description }</p>
             </div>
           </>
           );

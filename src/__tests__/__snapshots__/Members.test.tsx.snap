@@ -81,11 +81,11 @@ exports[`コンポーネントが描画されること 1`] = `
               "backgroundColor": "#000",
               "border": "0",
               "display": "block",
-              "height": 337.92,
+              "height": 270.336,
               "margin": "0",
               "overflow": "hidden",
               "padding": "0",
-              "width": 512,
+              "width": 409.6,
             }
           }
         >
@@ -94,12 +94,12 @@ exports[`コンポーネントが描画されること 1`] = `
               Object {
                 "border": "0",
                 "display": "block",
-                "height": 337.92,
+                "height": 270.336,
                 "margin": "0",
                 "overflow": "hidden",
                 "padding": "0",
                 "position": "absolute",
-                "width": 512,
+                "width": 409.6,
               }
             }
           >

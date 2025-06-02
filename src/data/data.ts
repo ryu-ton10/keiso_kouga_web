@@ -51,56 +51,6 @@ export const members = [
     keywords: ["列車", "神社仏閣"],
     camera: "D3100"
   },
-  {
-    id: nanoid(),
-    name: "燐",
-    icon: {
-      webp:"Icons/rin_icon.webp",
-      jpeg:"Icons/rin_icon.jpeg",
-    },
-    works: [
-      {
-        id: nanoid(),
-        url: "MajorWorks/rin/rin_work_1_prev.jpeg",
-      },
-      {
-        id: nanoid(),
-        url: "MajorWorks/rin/rin_work_2_prev.jpeg",
-      },
-      {
-        id: nanoid(),
-        url: "MajorWorks/rin/rin_work_3_prev.jpeg",
-      },
-    ],
-    twitter_url: "https://twitter.com/SekiRinphoto",
-    keywords: ["天体", "夜景"],
-    camera: "α7RⅡ / D5300"
-  },
-  {
-    id: nanoid(),
-    name: "千鈴",
-    icon: {
-      webp:"Icons/chirin_icon.webp",
-      jpeg:"Icons/chirin_icon.jpeg",
-    },
-    works: [
-      {
-        id: nanoid(),
-        url: "MajorWorks/chirin/chirin_work_1_prev.jpeg",
-      },
-      {
-        id: nanoid(),
-        url: "MajorWorks/chirin/chirin_work_2_prev.jpeg",
-      },
-      {
-        id: nanoid(),
-        url: "MajorWorks/chirin/chirin_work_3_prev.jpeg",
-      },
-    ],
-    twitter_url: "https://twitter.com/ChirinPhoto",
-    keywords: ["天体", "夜景"],
-    camera: "α7RⅢ / D5500"
-  },
 ]
 
 export const books = [

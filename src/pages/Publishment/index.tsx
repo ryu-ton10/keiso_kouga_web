@@ -47,6 +47,15 @@ function Publishment(props: Props) {
           );
         })}
       </div>
+      <div className="booth-link">
+        <a href="https://keisokoga-moon.booth.pm/" rel="noopener noreferrer" target="_blank">
+          <img
+            aria-label='booth-logo'
+            src={process.env.PUBLIC_URL + 'booth_logo.png'}
+          />
+        </a>
+        <p>一部の同人誌は BOOTH でも扱っております</p>
+      </div>
     </div>
   );
 }

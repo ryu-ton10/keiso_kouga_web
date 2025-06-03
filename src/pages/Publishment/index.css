@@ -66,6 +66,7 @@
 
   .publishment-table {
     padding: 50px 30px;
+    padding-bottom: 0;
   }
 
   .publishment-cell > picture {
@@ -111,6 +112,7 @@
 
   .publishment-table {
     padding: 30px 50px;
+    padding-bottom: 0;
   }
 
   .publishment-cell > picture {
@@ -129,6 +131,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 80px;
+    padding-bottom: 0;
   }
 
   .publishment-cell {
@@ -155,7 +158,8 @@
   }
 
   .publishment-table {
-    padding: 80px 200px
+    padding: 80px 200px;
+    padding-bottom: 0;
   }
 
   .booth-link > a > img {
@@ -167,5 +171,6 @@
 @media (min-width: 1500px) {
   .publishment-table {
     padding: 120px 300px;
+    padding-bottom: 0;
   }
 }

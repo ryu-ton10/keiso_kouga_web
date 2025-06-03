@@ -25,16 +25,62 @@
   margin-bottom: 0;
 }
 
-/* ========= 見出しのレスポンスデザイン =========== */
+/* ========= 同人誌詳細コンテナ =========== */
+.publishment-cell {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.publishment-cell > h1, p {
+  font-family: 'Hiragino Mincho Pro';
+  color: white;
+  text-align: center;
+}
+
+/* ========= BOOTH へのリンク =========== */
+.booth-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.booth-link > a {
+  display: flex;
+  justify-content: center;
+}
+
+/* ========= レスポンスクエリ =========== */
 @media (min-width: 280px) {
   .publishment-title {
     height: 100px;
   }
+
   .publishment-title-jp {
     font-size: 24pt;
   }
+
   .publishment-title-en {
     font-size: 9pt;
+  }
+
+  .publishment-table {
+    padding: 50px 30px;
+  }
+
+  .publishment-cell > picture {
+    height: 300px;
+    width: auto;
+  }
+
+  .publishment-cell > picture > img {
+    max-width: 100%;
+    width: auto;
+  }
+
+  .booth-link > a > img {
+    margin: 40px;
+    max-width: 50%;
   }
 }
 
@@ -54,61 +100,27 @@
   .publishment-title {
     height: 150px;
   }
+
   .publishment-title-jp {
     font-size: 36pt;
   }
+
   .publishment-title-en {
     font-size: 14pt;
   }
-}
 
-@media (min-width: 960px) {
-  .publishment-title {
-    height: 180px;
-  }
-  .publishment-title-jp {
-    font-size: 40pt;
-  }
-  .publishment-title-en {
-    font-size: 16pt;
-  }
-}
-
-/* ========= 同人誌詳細コンテナ =========== */
-.publishment-cell {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.publishment-cell > h1, p {
-  font-family: 'Hiragino Mincho Pro';
-  color: white;
-  text-align: center;
-}
-
-/* ========= 同人誌詳細レスポンスクエリ =========== */
-@media (min-width: 280px) {
-  .publishment-table {
-    padding: 50px 30px;
-  }
-  .publishment-cell > picture {
-    height: 300px;
-    width: auto;
-  }
-
-  .publishment-cell > picture > img {
-    max-width: 100%;
-    width: auto;
-  }
-}
-
-@media (min-width: 576px) {
   .publishment-table {
     padding: 30px 50px;
   }
+
   .publishment-cell > picture {
     height: 500px;
     width: auto;
+  }
+
+  .booth-link > a > img {
+    margin: 40px;
+    max-width: 40%;
   }
 }
 
@@ -122,11 +134,33 @@
   .publishment-cell {
     padding: 20px 50px;
   }
+
+  .booth-link > a > img {
+    margin: 40px;
+    max-width: 30%;
+  }
 }
 
 @media (min-width: 960px) {
+  .publishment-title {
+    height: 180px;
+  }
+
+  .publishment-title-jp {
+    font-size: 40pt;
+  }
+
+  .publishment-title-en {
+    font-size: 16pt;
+  }
+
   .publishment-table {
     padding: 80px 200px
+  }
+
+  .booth-link > a > img {
+    margin: 40px;
+    max-width: 20%;
   }
 }
 

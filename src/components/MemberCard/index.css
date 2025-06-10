@@ -9,13 +9,13 @@
 }
 
 .member-profile-left .name {
-  font-family: 'Hiragino Mincho Pro';
+  font-family: 'Hiragino Mincho Pro', sans-serif;
   color: white;
   margin-bottom: 0;
 }
 
 .member-profile-left p {
-  font-family: 'Hiragino Mincho Pro';
+  font-family: 'Hiragino Mincho Pro', sans-serif;
   color: white;
   padding: 0;
   margin-bottom: 0;

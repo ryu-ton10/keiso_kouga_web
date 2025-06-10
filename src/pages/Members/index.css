@@ -14,14 +14,14 @@
 
 .member-title-jp {
   text-align: center;
-  font-family: 'Hiragino Mincho Pro';
+  font-family: 'Hiragino Mincho Pro', sans-serif;
   color: white;
   margin-bottom: 0;
 }
 
 .member-title-en {
   text-align: left;
-  font-family: 'Hiragino Mincho Pro';
+  font-family: 'Hiragino Mincho Pro', sans-serif;
   color: white;
   margin-bottom: 0;
 }

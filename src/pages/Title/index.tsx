@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Spin } from 'antd';
 import './index.css';
 import bgImage from './../../assets/title_chayagai.jpg';
@@ -11,7 +11,7 @@ function Title() {
     backgroundImage: `url(${bgImage})`
   }
 
-  let fetchImage = new Promise((resolve, reject) => {
+  const fetchImage = new Promise((resolve, reject) => {
     // 画像のPreloadを実行
     const img = new Image();
     img.src = bgImage;
@@ -40,7 +40,7 @@ function Title() {
           <div className="title-text">
             <h1 className="title-main">珪素光画</h1>
             <p className="title-sub">日常を、写真で紡ぐ。</p>
-            <p className="scroll"><span></span></p>
+            <p className="scroll"><span /></p>
           </div>
         </div>
       </div>

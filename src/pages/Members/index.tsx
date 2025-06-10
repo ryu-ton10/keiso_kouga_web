@@ -1,7 +1,6 @@
-import React from 'react';
 import './index.css';
 import MemberCard from 'components/MemberCard';
-import { Member } from 'keisoKougaWebData';
+import type { Member } from 'keisoKougaWebData';
 
 type Props = {
   members: Member[];
@@ -18,11 +17,11 @@ function Members(props: Props) {
         <p className="member-title-en">Members</p>
       </div>
       <div className="member-cell">
-        {members.map((member, index) => {
-          const { name, icon, works, twitter_url, camera } = member;
+        {members.map((member) => {
+          const { id, name, icon, works, twitter_url, camera } = member;
           return (
             <MemberCard
-              key={index}
+              key={id}
               name={name}
               icon={icon}
               works={works}

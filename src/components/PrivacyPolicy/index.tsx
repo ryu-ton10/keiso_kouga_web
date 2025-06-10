@@ -1,9 +1,8 @@
-import React from 'react';
 import './index.css';
 
 type Props = {
   scentence: string;
-  hook: Function;
+  hook: (args: boolean) => void;
 }
 
 function PrivacyPolicy(props: Props) {
@@ -14,7 +13,7 @@ function PrivacyPolicy(props: Props) {
     <div className="overlay">
       <div className="modal">
         <p>{scentence}</p>
-        <button onClick={ () => hook(false) }>OK</button>
+        <button type="button" onClick={ () => hook(false) }>OK</button>
       </div>
     </div>
   );

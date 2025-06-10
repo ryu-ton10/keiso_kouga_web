@@ -12,6 +12,7 @@ exports[`コンポーネントが描画されること 1`] = `
     </p>
     <button
       onClick={[Function]}
+      type="button"
     >
       OK
     </button>

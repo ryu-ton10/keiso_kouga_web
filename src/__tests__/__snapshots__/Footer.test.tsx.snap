@@ -10,6 +10,7 @@ exports[`コンポーネントが描画されること 1`] = `
   >
     <p
       onClick={[Function]}
+      onKeyPress={[Function]}
     >
       プライバシーポリシー
     </p>

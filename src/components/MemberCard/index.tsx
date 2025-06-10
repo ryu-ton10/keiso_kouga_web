@@ -1,11 +1,10 @@
-import React from 'react';
 import './index.css';
 import { TwitterOutlined } from '@ant-design/icons';
-import { MemberWork, MemberIcon } from 'keisoKougaWebData';
+import type { MemberWork, MemberIcon } from 'keisoKougaWebData';
 import SimpleImageSlider from 'react-simple-image-slider';
 
 type Props = {
-  key: number;
+  key: string;
   name: string;
   icon: MemberIcon;
   works: MemberWork[];
@@ -21,7 +20,7 @@ function MemberCard(props: Props) {
     <div className="member-card">
       <div className="member-profile-left">
         <picture>
-          <source type="image/webp" srcSet={process.env.PUBLIC_URL + props.icon.webp}></source>
+          <source type="image/webp" srcSet={process.env.PUBLIC_URL + props.icon.webp} />
           <img src={process.env.PUBLIC_URL + props.icon.jpeg} alt="icon" />
         </picture>
         <p className="name">{props.name}</p>

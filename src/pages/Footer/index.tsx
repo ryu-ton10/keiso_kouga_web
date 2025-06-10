@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import PrivacyPolicy from 'components/PrivacyPolicy';
 import './index.css';
 
@@ -15,7 +15,7 @@ function Footer(props: Props) {
   return (
     <div className="footer" data-testid="footer">
       <div className="privacy_policy">
-        <p onClick={ () => setIsShowModal(true) }>プライバシーポリシー</p>
+        <p onClick={ () => setIsShowModal(true) } onKeyPress={ () => setIsShowModal(false) }>プライバシーポリシー</p>
       </div>
       {isShowModal &&
         <PrivacyPolicy scentence={privacy_policy} hook={setIsShowModal} />

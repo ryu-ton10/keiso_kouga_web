@@ -31,7 +31,7 @@ export const members = [
     name: "とんと",
     icon: {
       webp:"Icons/tonto_icon.webp",
-      jpeg:"Icons/tonto_icon.jpg",
+      jpeg:"Icons/tonto_icon.JPG",
     },
     works: [
       {

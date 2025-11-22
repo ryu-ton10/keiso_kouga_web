@@ -11,23 +11,41 @@
   justify-content: center;
 }
 
-.overlay .modal {
+.modal {
   background: #f5f5f5;
-  padding: 20px 10px 20px 10px;
+  padding: 20px 50px;
   border-radius: 3px;
-  max-width: 70%;
+  width: 70%;
   text-align: center;
 }
 
-.overlay .modal button {
-  margin: 10px 0 10px 0;
+.modal button {
+  margin: 10px 0;
   font-size: 15pt;
   color: white;
   background-color: #00bfff;
   border-color: white;
+  cursor: pointer;
 }
 
-.overlay .modal p {
+.modal p {
   font-size: 12pt;
   color: #808080;
+  white-space: pre-wrap;
+}
+
+@media (min-width: 280px) {
+
+  .modal {
+    width: 90%;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .modal {
+    width: 40%;
+  }
+
 }

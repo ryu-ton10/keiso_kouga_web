@@ -73,6 +73,12 @@
     grid-template-columns: 1fr 2fr;
   }
 
+  .member-profile-left {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
   .member-profile-left img {
     padding: 20px 0 20px 0;
     max-width: 200px;

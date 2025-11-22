@@ -28,7 +28,7 @@ function Publishment(props: Props) {
       </div>
       <div className="publishment-table">
         {books.map((book) => {
-          const { id, title, description, image } = book;
+          const { id, title, image } = book;
           return (
           <>
             <div className="publishment-cell" key={id}>
@@ -39,8 +39,7 @@ function Publishment(props: Props) {
                   src={process.env.PUBLIC_URL + image.jpeg}
                 />
               </picture>
-              <h1>{ title }</h1>
-              <p>{ description }</p>
+              <p>{ title }</p>
             </div>
           </>
           );

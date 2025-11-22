@@ -28,7 +28,6 @@
 /* ========= 同人誌詳細コンテナ =========== */
 .publishment-cell {
   text-align: center;
-  padding-bottom: 50px;
 }
 
 .publishment-cell > h1, p {
@@ -69,14 +68,23 @@
     padding-bottom: 0;
   }
 
+  .publishment-cell {
+    padding-bottom: 10px;
+  }
+
   .publishment-cell > picture {
-    height: 300px;
-    width: auto;
+    width: 80%;
+    height: auto;
   }
 
   .publishment-cell > picture > img {
-    max-width: 100%;
-    width: auto;
+    width: 80%;
+    height: auto;
+  }
+
+  .publishment-cell > p {
+    padding-top: 10px;
+    font-size: 16pt;
   }
 
   .booth-link > a > img {
@@ -95,6 +103,21 @@
   .publishment-title-en {
     font-size: 11pt;
   }
+
+  .publishment-cell {
+    padding-bottom: 30px;
+  }
+
+  .publishment-cell > picture {
+    width: 70%;
+    height: auto;
+  }
+
+  .publishment-cell > picture > img {
+    width: 70%;
+    height: auto;
+  }
+
 }
 
 @media (min-width: 576px) {
@@ -115,9 +138,18 @@
     padding-bottom: 0;
   }
 
+  .publishment-cell {
+    padding-bottom: 50px;
+  }
+
   .publishment-cell > picture {
-    height: 500px;
-    width: auto;
+    width: 50%;
+    height: auto;
+  }
+
+  .publishment-cell > picture > img {
+    width: 50%;
+    height: auto;
   }
 
   .booth-link > a > img {
@@ -135,7 +167,22 @@
   }
 
   .publishment-cell {
-    padding: 20px 50px;
+    padding-bottom: 50px;
+  }
+
+  .publishment-cell > p {
+    padding-top: 15px;
+    font-size: 14pt;
+  }
+
+  .publishment-cell > picture {
+    width: 50%;
+    height: auto;
+  }
+
+  .publishment-cell > picture > img {
+    width: 50%;
+    height: auto;
   }
 
   .booth-link > a > img {
@@ -158,7 +205,7 @@
   }
 
   .publishment-table {
-    padding: 80px 200px;
+    padding: 80px 100px;
     padding-bottom: 0;
   }
 
@@ -170,7 +217,7 @@
 
 @media (min-width: 1500px) {
   .publishment-table {
-    padding: 120px 300px;
+    padding: 120px 150px;
     padding-bottom: 0;
   }
 }
